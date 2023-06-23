@@ -1,0 +1,10 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal -112 -32 112 32
+WINDOW 0 0 -40 Bottom 2
+PIN -112 0 LEFT 8
+PINATTR PinName IN[0:1]
+PINATTR SpiceOrder 1
+PIN 112 0 RIGHT 8
+PINATTR PinName OUT[0:1]
+PINATTR SpiceOrder 2

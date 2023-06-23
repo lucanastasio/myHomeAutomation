@@ -1,0 +1,90 @@
+05-09 16:54:22 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 359:Plugin executed on: 'linux'
+05-09 16:54:22 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 360:Plugin executed with python version: '3.10.10 (main, Mar  5 2023, 22:26:53) [GCC 12.2.1 20230201]'
+05-09 16:54:22 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 361:KiCad build version: 7.0.1
+05-09 16:54:22 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 362:Plugin version: 2.0.10
+05-09 16:54:22 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 363:Frame repr: <wx._core.Frame object at 0x7fd2fdf13b50>
+05-09 16:54:22 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 387:Preparing replicator with Q5 as a reference
+05-09 16:54:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 113:getting a list of all footprints on board
+05-09 16:54:22 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 435:source anchor footprint is 'Q5'
+Located on: ['mirror_5']
+With filenames: ['mirror_unit.kicad_sch']
+With sheet_id:['mirror_5']
+05-09 16:54:22 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 442:Corresponding footprints are 
+[('Q6', ['mirror_4']), ('Q1', ['mirror_0']), ('Q2', ['mirror_1']), ('Q3', ['mirror_3']), ('Q4', ['mirror_2']), ('Q7', ['mirror_7']), ('Q5', ['mirror_5']), ('Q8', ['mirror_6'])]
+05-09 16:54:22 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 454:Showing dialog
+05-09 16:54:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 390:constructing a list of sheets suitable for replication on level:'mirror_5', file:'mirror_unit.kicad_sch'
+05-09 16:54:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 427:suitable sheets are:[['mirror_0'], ['mirror_1'], ['mirror_2'], ['mirror_3'], ['mirror_4'], ['mirror_6'], ['mirror_7']]
+05-09 16:54:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1347:Level selected: ['mirror_5']
+05-09 16:54:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1182:Filtering list of tracks
+05-09 16:54:22 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 460:Toolbar position: wx.Point(2426, 1527)
+05-09 16:54:22 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 465:Dialog position: wx.Point(2062, 1527)
+05-09 16:54:32 com_github_MitjaNemec_ReplicateLayout.replicate_layout 390:constructing a list of sheets suitable for replication on level:'mirror_5', file:'mirror_unit.kicad_sch'
+05-09 16:54:32 com_github_MitjaNemec_ReplicateLayout.replicate_layout 427:suitable sheets are:[['mirror_0'], ['mirror_1'], ['mirror_2'], ['mirror_3'], ['mirror_4'], ['mirror_6'], ['mirror_7']]
+05-09 16:54:32 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1347:Level selected: ['mirror_5']
+05-09 16:54:32 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1182:Filtering list of tracks
+05-09 16:54:32 com_github_MitjaNemec_ReplicateLayout.replicate_layout 390:constructing a list of sheets suitable for replication on level:'mirror_5', file:'mirror_unit.kicad_sch'
+05-09 16:54:32 com_github_MitjaNemec_ReplicateLayout.replicate_layout 427:suitable sheets are:[['mirror_0'], ['mirror_1'], ['mirror_2'], ['mirror_3'], ['mirror_4'], ['mirror_6'], ['mirror_7']]
+05-09 16:54:32 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1347:Level selected: ['mirror_5']
+05-09 16:54:33 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1182:Filtering list of tracks
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 390:constructing a list of sheets suitable for replication on level:'mirror_5', file:'mirror_unit.kicad_sch'
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 427:suitable sheets are:[['mirror_0'], ['mirror_1'], ['mirror_2'], ['mirror_3'], ['mirror_4'], ['mirror_6'], ['mirror_7']]
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 207:Replicating layout
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 236:Starting replication of sheets: [['mirror_0'], ['mirror_1'], ['mirror_2'], ['mirror_3'], ['mirror_4'], ['mirror_6'], ['mirror_7']]
+on level: ['mirror_5']
+with tracks=True, zone=True, text=False, text=False, intersecting=False, remove=False, locked footprints=False, group_only=False
+05-09 16:54:43 root 299:updating GUI message: 'Preparing for replication'
+05-09 16:54:43 root 304:updating GUI with: 0
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 306:Getting the list of source footprints
+05-09 16:54:43 root 304:updating GUI with: 0
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 316:Getting the list of all the remaining footprints
+05-09 16:54:43 root 304:updating GUI with: 16
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 323:Getting source tracks
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1182:Filtering list of tracks
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 327:Getting source zones
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 331:Getting source text items
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 335:Getting source drawing items
+05-09 16:54:43 root 299:updating GUI message: 'Replicating footprints'
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 739:Replicating footprints
+05-09 16:54:43 root 304:updating GUI with: 0
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 745:Replicating footprints on sheet ['mirror_0']
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 745:Replicating footprints on sheet ['mirror_1']
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 745:Replicating footprints on sheet ['mirror_2']
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 745:Replicating footprints on sheet ['mirror_3']
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 745:Replicating footprints on sheet ['mirror_4']
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 745:Replicating footprints on sheet ['mirror_6']
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 745:Replicating footprints on sheet ['mirror_7']
+05-09 16:54:43 root 304:updating GUI with: 89
+05-09 16:54:43 root 299:updating GUI message: 'Replicating tracks'
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 904:Replicating tracks
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 910:Replicating tracks on sheet ['mirror_0']
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 734:Net pairs for sheet ['mirror_0'] :[('/Ca', '/Wa'), ('Net-(Q25-C)', 'Net-(Q17-C)'), ('/Ca-', '/Wa-'), ('', ''), ('Net-(Q5-S)', 'Net-(Q1-S)'), ('Net-(Q25-B)', 'Net-(Q17-B)'), ('/C0-', '/W0-')]
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 910:Replicating tracks on sheet ['mirror_1']
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 734:Net pairs for sheet ['mirror_1'] :[('Net-(Q25-C)', 'Net-(Q19-C)'), ('/Ca', '/Wa'), ('/Ca-', '/Wa-'), ('', ''), ('/C0-', '/W1-'), ('Net-(Q5-S)', 'Net-(Q2-S)'), ('Net-(Q25-B)', 'Net-(Q19-B)')]
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 910:Replicating tracks on sheet ['mirror_2']
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 734:Net pairs for sheet ['mirror_2'] :[('Net-(Q5-S)', 'Net-(Q4-S)'), ('', ''), ('Net-(Q25-B)', 'Net-(Q23-B)'), ('Net-(Q25-C)', 'Net-(Q23-C)'), ('/Ca-', '/Wb-'), ('/C0-', '/W3-'), ('/Ca', '/Wb')]
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 910:Replicating tracks on sheet ['mirror_3']
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 734:Net pairs for sheet ['mirror_3'] :[('/Ca', '/Wb'), ('/C0-', '/W2-'), ('', ''), ('Net-(Q5-S)', 'Net-(Q3-S)'), ('Net-(Q25-C)', 'Net-(Q21-C)'), ('/Ca-', '/Wb-'), ('Net-(Q25-B)', 'Net-(Q21-B)')]
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 910:Replicating tracks on sheet ['mirror_4']
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 734:Net pairs for sheet ['mirror_4'] :[('Net-(Q5-S)', 'Net-(Q6-S)'), ('Net-(Q25-B)', 'Net-(Q27-B)'), ('', ''), ('/Ca', '/Ca'), ('Net-(Q25-C)', 'Net-(Q27-C)'), ('/C0-', '/C1-'), ('/Ca-', '/Ca-')]
+05-09 16:54:43 root 304:updating GUI with: 65
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 910:Replicating tracks on sheet ['mirror_6']
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 734:Net pairs for sheet ['mirror_6'] :[('', ''), ('Net-(Q25-B)', 'Net-(Q31-B)'), ('/C0-', '/C3-'), ('Net-(Q25-C)', 'Net-(Q31-C)'), ('Net-(Q5-S)', 'Net-(Q8-S)'), ('/Ca-', '/Cb-'), ('/Ca', '/Cb')]
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 910:Replicating tracks on sheet ['mirror_7']
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 734:Net pairs for sheet ['mirror_7'] :[('Net-(Q5-S)', 'Net-(Q7-S)'), ('', ''), ('Net-(Q25-B)', 'Net-(Q29-B)'), ('Net-(Q25-C)', 'Net-(Q29-C)'), ('/Ca-', '/Cb-'), ('/C0-', '/C2-'), ('/Ca', '/Cb')]
+05-09 16:54:43 root 299:updating GUI message: 'Replicating zones'
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 962:Replicating zones
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 969:Replicating zones on sheet ['mirror_0']
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 734:Net pairs for sheet ['mirror_0'] :[('/Ca', '/Wa'), ('Net-(Q25-C)', 'Net-(Q17-C)'), ('/Ca-', '/Wa-'), ('', ''), ('Net-(Q5-S)', 'Net-(Q1-S)'), ('Net-(Q25-B)', 'Net-(Q17-B)'), ('/C0-', '/W0-')]
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 969:Replicating zones on sheet ['mirror_1']
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 734:Net pairs for sheet ['mirror_1'] :[('Net-(Q25-C)', 'Net-(Q19-C)'), ('/Ca', '/Wa'), ('/Ca-', '/Wa-'), ('', ''), ('/C0-', '/W1-'), ('Net-(Q5-S)', 'Net-(Q2-S)'), ('Net-(Q25-B)', 'Net-(Q19-B)')]
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 969:Replicating zones on sheet ['mirror_2']
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 734:Net pairs for sheet ['mirror_2'] :[('Net-(Q5-S)', 'Net-(Q4-S)'), ('', ''), ('Net-(Q25-B)', 'Net-(Q23-B)'), ('Net-(Q25-C)', 'Net-(Q23-C)'), ('/Ca-', '/Wb-'), ('/C0-', '/W3-'), ('/Ca', '/Wb')]
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 969:Replicating zones on sheet ['mirror_3']
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 734:Net pairs for sheet ['mirror_3'] :[('/Ca', '/Wb'), ('/C0-', '/W2-'), ('', ''), ('Net-(Q5-S)', 'Net-(Q3-S)'), ('Net-(Q25-C)', 'Net-(Q21-C)'), ('/Ca-', '/Wb-'), ('Net-(Q25-B)', 'Net-(Q21-B)')]
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 969:Replicating zones on sheet ['mirror_4']
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 734:Net pairs for sheet ['mirror_4'] :[('Net-(Q5-S)', 'Net-(Q6-S)'), ('Net-(Q25-B)', 'Net-(Q27-B)'), ('', ''), ('/Ca', '/Ca'), ('Net-(Q25-C)', 'Net-(Q27-C)'), ('/C0-', '/C1-'), ('/Ca-', '/Ca-')]
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 969:Replicating zones on sheet ['mirror_6']
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 734:Net pairs for sheet ['mirror_6'] :[('', ''), ('Net-(Q25-B)', 'Net-(Q31-B)'), ('/C0-', '/C3-'), ('Net-(Q25-C)', 'Net-(Q31-C)'), ('Net-(Q5-S)', 'Net-(Q8-S)'), ('/Ca-', '/Cb-'), ('/Ca', '/Cb')]
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 969:Replicating zones on sheet ['mirror_7']
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.replicate_layout 734:Net pairs for sheet ['mirror_7'] :[('Net-(Q5-S)', 'Net-(Q7-S)'), ('', ''), ('Net-(Q25-B)', 'Net-(Q29-B)'), ('Net-(Q25-C)', 'Net-(Q29-C)'), ('/Ca-', '/Cb-'), ('/C0-', '/C2-'), ('/Ca', '/Cb')]
+05-09 16:54:43 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 223:Replication complete

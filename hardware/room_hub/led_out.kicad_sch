@@ -1,0 +1,19 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 8d30a9eb-72af-4d73-baa9-30000518db18)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (text "buffer:\nSN74LVC2G17" (at 38.1 46.99 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid c486d9a8-ab8a-4b57-82d4-824c025c32ef)
+  )
+  (text "level shifters:\nCD4504B + ?\nUCC27517DBVR\nL293DD" (at 38.1 38.1 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid f632ac4b-0649-47e8-b3d2-a23d62061b3c)
+  )
+)

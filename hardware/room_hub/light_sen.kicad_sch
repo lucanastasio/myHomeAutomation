@@ -449,7 +449,7 @@
     (pin "1" (uuid 5aeea32c-2607-4c18-944b-5c320e11d254))
     (pin "2" (uuid fe074e69-9906-4923-9daa-0bdb20ba35f3))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/b642a6ac-bee1-4c53-bd51-654c12fc53a2"
           (reference "C24") (unit 1)
         )
@@ -480,7 +480,7 @@
     (pin "1" (uuid a7254d99-170a-4320-ab9b-c9b9ba1d0314))
     (pin "2" (uuid 33843c1e-e2a7-4a26-b935-89662ab48c7a))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/b642a6ac-bee1-4c53-bd51-654c12fc53a2"
           (reference "C23") (unit 1)
         )
@@ -510,7 +510,7 @@
     )
     (pin "1" (uuid b999b649-80a0-47b4-b769-6b5d4f15615d))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/b642a6ac-bee1-4c53-bd51-654c12fc53a2"
           (reference "#PWR082") (unit 1)
         )
@@ -540,7 +540,7 @@
     )
     (pin "1" (uuid 6907c139-0c9a-40bc-bc5f-b45b6e05a605))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/b642a6ac-bee1-4c53-bd51-654c12fc53a2"
           (reference "#PWR080") (unit 1)
         )
@@ -571,7 +571,7 @@
     (pin "1" (uuid cba744fb-d8f0-4600-9a2e-c8d763512e1d))
     (pin "2" (uuid 28eb92e8-55db-4591-93bb-4e4e73e3cc80))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/b642a6ac-bee1-4c53-bd51-654c12fc53a2"
           (reference "D6") (unit 1)
         )
@@ -596,7 +596,7 @@
     )
     (pin "1" (uuid 847f7506-361d-4f68-83a8-0b53b7687653))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/b642a6ac-bee1-4c53-bd51-654c12fc53a2"
           (reference "#PWR084") (unit 1)
         )
@@ -621,7 +621,7 @@
     )
     (pin "1" (uuid 00385337-5fb3-4849-87f0-2a836260bf35))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/b642a6ac-bee1-4c53-bd51-654c12fc53a2"
           (reference "#PWR079") (unit 1)
         )
@@ -652,7 +652,7 @@
     (pin "1" (uuid 6d8fef07-9047-4195-a7ab-5acf230fec23))
     (pin "2" (uuid 43274f7e-ed96-4bc1-bd92-ca18a685d4b6))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/b642a6ac-bee1-4c53-bd51-654c12fc53a2"
           (reference "R1") (unit 1)
         )
@@ -683,7 +683,7 @@
     (pin "1" (uuid 9dffa8b8-00f2-4b54-bfff-1fe8cf239264))
     (pin "2" (uuid 5d2796a9-d15d-49b2-ba12-b91ec8f0cf14))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/b642a6ac-bee1-4c53-bd51-654c12fc53a2"
           (reference "C25") (unit 1)
         )
@@ -717,7 +717,7 @@
     (pin "3" (uuid c1209bf1-8f15-403b-8213-6fb0b33adaa2))
     (pin "4" (uuid 4278f5e0-78ea-4be2-aba5-1bfcab9ea6a4))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/b642a6ac-bee1-4c53-bd51-654c12fc53a2"
           (reference "U1") (unit 1)
         )
@@ -747,7 +747,7 @@
     )
     (pin "1" (uuid 925b4306-7aae-4470-b096-ce4e517a21d5))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/b642a6ac-bee1-4c53-bd51-654c12fc53a2"
           (reference "#PWR083") (unit 1)
         )
@@ -772,7 +772,7 @@
     )
     (pin "1" (uuid 38690891-4446-42d6-ac52-c4ee109a3852))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/b642a6ac-bee1-4c53-bd51-654c12fc53a2"
           (reference "#PWR078") (unit 1)
         )
@@ -803,7 +803,7 @@
     (pin "1" (uuid 92776bf7-00b4-46d5-9ab8-3a2dd4c1ada5))
     (pin "2" (uuid 52dd93ef-9c24-4f5e-afef-b21f64cc121e))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/b642a6ac-bee1-4c53-bd51-654c12fc53a2"
           (reference "R2") (unit 1)
         )
@@ -833,7 +833,7 @@
     )
     (pin "1" (uuid d81a4466-9d6b-46ae-95ad-9fb7fe2febed))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/b642a6ac-bee1-4c53-bd51-654c12fc53a2"
           (reference "#PWR081") (unit 1)
         )

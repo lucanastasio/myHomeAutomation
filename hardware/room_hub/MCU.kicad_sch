@@ -796,9 +796,6 @@
   (junction (at 254 69.85) (diameter 0) (color 0 0 0 0)
     (uuid 2146c328-8629-431b-aa3b-68640318dfac)
   )
-  (junction (at 241.3 132.08) (diameter 0) (color 0 0 0 0)
-    (uuid 30b35702-c4b6-4829-901a-ce41e8a5fc60)
-  )
   (junction (at 254 113.03) (diameter 0) (color 0 0 0 0)
     (uuid 365c5da5-67c0-4992-9ac0-63a3fa3ddaa9)
   )
@@ -811,20 +808,11 @@
   (junction (at 241.3 113.03) (diameter 0) (color 0 0 0 0)
     (uuid a083cce1-229d-4c16-8349-efc8a5c15c68)
   )
-  (junction (at 254 151.13) (diameter 0) (color 0 0 0 0)
-    (uuid bb94a789-cc87-4b4d-b6d1-9f5ff47a7a4f)
-  )
-  (junction (at 254 132.08) (diameter 0) (color 0 0 0 0)
-    (uuid bb96529c-c108-4c62-b4ab-8e2be675b360)
-  )
   (junction (at 241.3 91.44) (diameter 0) (color 0 0 0 0)
     (uuid cd6e65b6-dc47-4f5f-86d5-6795fac30665)
   )
   (junction (at 254 91.44) (diameter 0) (color 0 0 0 0)
     (uuid d99aea65-443d-402b-9c46-56ddb4fb5e6c)
-  )
-  (junction (at 241.3 151.13) (diameter 0) (color 0 0 0 0)
-    (uuid eba7c2eb-4aa4-4d41-a11a-f5978d87a37b)
   )
 
   (bus_entry (at 200.66 66.04) (size -2.54 2.54)
@@ -864,10 +852,6 @@
     (stroke (width 0) (type default))
     (uuid 08554903-dc26-43af-b9a2-0d5e97015c24)
   )
-  (wire (pts (xy 254 132.08) (xy 256.54 132.08))
-    (stroke (width 0) (type default))
-    (uuid 0afc392c-38de-443d-bbee-f33041989245)
-  )
   (wire (pts (xy 195.58 68.58) (xy 198.12 68.58))
     (stroke (width 0) (type default))
     (uuid 0bcb4a1c-8df4-480b-bced-b69eff096380)
@@ -876,17 +860,9 @@
     (stroke (width 0) (type default))
     (uuid 0d13cd39-8e27-4ee3-828e-a7e8592b9487)
   )
-  (wire (pts (xy 254 151.13) (xy 256.54 151.13))
-    (stroke (width 0) (type default))
-    (uuid 0f0f7dc3-f1f7-4414-a3f8-2668f24fb6d9)
-  )
   (wire (pts (xy 269.24 69.85) (xy 266.7 69.85))
     (stroke (width 0) (type default))
     (uuid 113b95d5-a31f-4d5c-8e22-31ec342ec032)
-  )
-  (wire (pts (xy 238.76 151.13) (xy 241.3 151.13))
-    (stroke (width 0) (type default))
-    (uuid 1291fb97-ba4c-427f-9139-5e4305cdf17c)
   )
   (wire (pts (xy 160.02 74.93) (xy 162.56 74.93))
     (stroke (width 0) (type default))
@@ -973,10 +949,6 @@
     (stroke (width 0) (type default))
     (uuid 59f1f5ff-bac9-4827-9b5c-3fa6f4ac22b8)
   )
-  (wire (pts (xy 251.46 151.13) (xy 254 151.13))
-    (stroke (width 0) (type default))
-    (uuid 6603acd9-fe39-48c8-867b-b07b2d3da77d)
-  )
   (wire (pts (xy 160.02 92.71) (xy 161.29 92.71))
     (stroke (width 0) (type default))
     (uuid 66587551-92dd-467f-aa62-a2035e0850ca)
@@ -984,10 +956,6 @@
   (wire (pts (xy 238.76 91.44) (xy 241.3 91.44))
     (stroke (width 0) (type default))
     (uuid 66ed0065-5949-4e9d-99f2-01417b9ff220)
-  )
-  (wire (pts (xy 241.3 132.08) (xy 243.84 132.08))
-    (stroke (width 0) (type default))
-    (uuid 670bf3ca-6315-4c42-9fa8-8ef1c6aea0a3)
   )
   (wire (pts (xy 158.75 33.02) (xy 161.29 33.02))
     (stroke (width 0) (type default))
@@ -1009,14 +977,6 @@
     (stroke (width 0) (type default))
     (uuid 75ab9fcf-9f78-4e76-bf29-705a70dfc779)
   )
-  (wire (pts (xy 251.46 132.08) (xy 254 132.08))
-    (stroke (width 0) (type default))
-    (uuid 762d1054-8ee4-41dc-89c9-da628aec83ab)
-  )
-  (wire (pts (xy 241.3 151.13) (xy 243.84 151.13))
-    (stroke (width 0) (type default))
-    (uuid 7638ed83-87b7-4270-ae39-461fed66838a)
-  )
   (wire (pts (xy 251.46 91.44) (xy 254 91.44))
     (stroke (width 0) (type default))
     (uuid 7beb9b86-da2e-4cd2-b926-5a32a27b8349)
@@ -1025,10 +985,6 @@
     (stroke (width 0) (type default))
     (uuid 81bb9f55-e387-437d-a2b5-51e85cf5456e)
   )
-  (wire (pts (xy 238.76 132.08) (xy 241.3 132.08))
-    (stroke (width 0) (type default))
-    (uuid 863bc464-4172-4a5c-9c2e-3b61e5f14268)
-  )
   (wire (pts (xy 269.24 91.44) (xy 266.7 91.44))
     (stroke (width 0) (type default))
     (uuid 95fc5f0b-838b-476e-a09d-844e85e0297d)
@@ -1036,10 +992,6 @@
   (wire (pts (xy 160.02 100.33) (xy 165.1 100.33))
     (stroke (width 0) (type default))
     (uuid 9c239ef0-b288-4e3c-bb14-34342b1f29fb)
-  )
-  (wire (pts (xy 241.3 151.13) (xy 241.3 153.67))
-    (stroke (width 0) (type default))
-    (uuid 9d8f6609-deed-44bf-8ea9-931e9b253f55)
   )
   (wire (pts (xy 118.11 33.02) (xy 121.92 33.02))
     (stroke (width 0) (type default))
@@ -1078,10 +1030,6 @@
     (stroke (width 0) (type default))
     (uuid bb054ceb-dd80-486b-b4ac-f9ea70d3cd9a)
   )
-  (wire (pts (xy 254 148.59) (xy 254 151.13))
-    (stroke (width 0) (type default))
-    (uuid bc4292ec-0c90-493e-aa6a-d9e03bc4ec13)
-  )
   (wire (pts (xy 160.02 77.47) (xy 162.56 77.47))
     (stroke (width 0) (type default))
     (uuid bd33daf6-48f7-4d2d-857d-9d380f96a87d)
@@ -1111,10 +1059,6 @@
     (uuid cc4e3745-4fe8-4b57-9914-df5d39b7eba1)
   )
 
-  (wire (pts (xy 241.3 132.08) (xy 241.3 134.62))
-    (stroke (width 0) (type default))
-    (uuid cfee7e24-1341-4dab-8e6b-48853bdf05c4)
-  )
   (wire (pts (xy 241.3 113.03) (xy 243.84 113.03))
     (stroke (width 0) (type default))
     (uuid d077c4c2-f780-432e-a0d6-1124a1d29442)
@@ -1142,10 +1086,6 @@
   (wire (pts (xy 254 113.03) (xy 256.54 113.03))
     (stroke (width 0) (type default))
     (uuid def7e137-5f82-41f6-83d3-22c4a3066909)
-  )
-  (wire (pts (xy 254 129.54) (xy 254 132.08))
-    (stroke (width 0) (type default))
-    (uuid e0037b15-5e30-45d6-a19c-a2f0b6debe68)
   )
   (wire (pts (xy 160.02 87.63) (xy 162.56 87.63))
     (stroke (width 0) (type default))
@@ -1291,21 +1231,21 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 08456089-1edd-4e29-bfb2-db8160e21cc9)
   )
-  (label "_ENC_B" (at 238.76 132.08 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 0c91206b-efdc-4515-b68b-977ecde912a7)
-  )
   (label "BT_0" (at 238.76 91.44 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 0ed2aa63-587d-4aaa-beb3-82fb8e9af606)
+  )
+  (label "DIM1" (at 162.56 130.81 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 11177b7d-0f46-4f18-b74f-e3749972e3b6)
   )
   (label "~{ISP_RST}" (at 161.29 35.56 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1f870c7c-67c8-433f-ad21-38f9bac8cd50)
   )
-  (label "OUT2" (at 195.58 71.12 180) (fields_autoplaced)
+  (label "DIM0" (at 195.58 66.04 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 3de73f66-986e-4095-9c53-51ffa8d91cdb)
+    (uuid 3757fc11-5781-48dc-9228-eafe5ce9dcde)
   )
   (label "BT_1" (at 238.76 113.03 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
@@ -1323,25 +1263,21 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 5b01a930-a675-40dc-8de0-87534ea1d60b)
   )
-  (label "OUT2" (at 162.56 77.47 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 5ef2a484-a785-4214-a4bd-013d55316539)
-  )
-  (label "OUT3" (at 195.58 73.66 180) (fields_autoplaced)
+  (label "DIM1" (at 195.58 68.58 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 60d04f36-5aa5-4f90-8966-5fa7164ed45a)
+    (uuid 5fe7fc6e-15d1-4962-a6a5-260627084fcb)
   )
   (label "BT_0" (at 162.56 128.27 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 63170cab-b013-4dfb-923d-8bcc78e83722)
   )
-  (label "OUT3" (at 162.56 80.01 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 66189836-052f-428b-87b2-7ccc1c5947a3)
-  )
   (label "AREF" (at 52.07 35.56 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 690ee157-7d0b-45d2-8873-e6132f82d95c)
+  )
+  (label "DIM3" (at 162.56 80.01 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 69ac1851-90c4-4e70-82c4-fb005c495d0a)
   )
   (label "XTAL2" (at 161.29 92.71 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -1351,13 +1287,13 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 72620ce2-905e-4c6c-b18b-f145f8a72dcc)
   )
-  (label "OUT1" (at 162.56 130.81 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 77d66fdd-c0bf-4ccc-859a-55eaec3f8aeb)
-  )
   (label "ISP_SCK" (at 162.56 87.63 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 7ad733e8-82ee-4eef-be5c-496e95503e95)
+  )
+  (label "DIM0" (at 162.56 133.35 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 864f8d66-47fb-49a5-ab00-eb6f1a92758c)
   )
   (label "BT_1" (at 162.56 135.89 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -1367,45 +1303,33 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid a0aebbe9-cf16-4aa2-aeec-0fef133bddea)
   )
-  (label "_ENC_A" (at 162.56 105.41 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid a2db0fa6-bfc7-4d28-8219-74604297779a)
-  )
   (label "ISP_MOSI" (at 162.56 82.55 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid a4801523-16c3-4471-9c9b-0891d5474924)
+  )
+  (label "DIM3" (at 195.58 73.66 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid ab3eb092-4a94-4f64-8735-b58ec581b356)
+  )
+  (label "DIM2" (at 162.56 77.47 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid ae8167f8-9608-412d-a3d5-c47ed63af2f0)
+  )
+  (label "DIM2" (at 195.58 71.12 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid ae91e941-bec6-4466-acfd-e404cfd37617)
   )
   (label "~{ISP_RST}" (at 251.46 69.85 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid b013fe1c-7ce5-413e-baf3-ef3fd8d41eb2)
   )
-  (label "OUT1" (at 195.58 68.58 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid b5190e0e-4837-49b8-99ad-e5e9ddee719e)
-  )
   (label "XTAL1" (at 106.68 33.02 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid b9904c07-ccf3-4db7-a26f-589e01c7c49b)
   )
-  (label "OUT0" (at 195.58 66.04 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid c8c79530-1f3b-4d54-85ff-02e39f2b904d)
-  )
-  (label "_ENC_B" (at 162.56 102.87 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid d3a36569-6f4a-423c-a632-dfaea238fc54)
-  )
-  (label "_ENC_A" (at 238.76 151.13 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid d6e9e32c-725b-434f-887e-a8e42b294b74)
-  )
   (label "~{ISP_RST}" (at 165.1 114.3 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid de7477ba-f5b9-4a39-97d2-719ba4a73943)
-  )
-  (label "OUT0" (at 162.56 133.35 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid df0955a9-2ef0-4849-8e40-50db89faafc9)
   )
   (label "XTAL2" (at 121.92 33.02 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -1424,29 +1348,29 @@
     (uuid fd37b0df-12af-4d0f-9e9b-2277562b910b)
   )
 
-  (hierarchical_label "ENC_B" (shape input) (at 256.54 132.08 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 0aa4c6b5-1d2d-48b5-a41e-bb5a8a1dab1d)
-  )
-  (hierarchical_label "{OUT[0..3]}" (shape output) (at 203.2 63.5 0) (fields_autoplaced)
+  (hierarchical_label "{DIM[0..3]}" (shape output) (at 203.2 63.5 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 14fe919b-6f03-4ff7-9349-21f483b4f583)
-  )
-  (hierarchical_label "SS1" (shape output) (at 123.19 123.19 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 250a0aec-bbe2-4106-bb54-0bfb7e4c268d)
   )
   (hierarchical_label "RXD1" (shape input) (at 171.45 85.09 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 28bb3bf7-8059-4fe7-9905-8e09195d7303)
   )
+  (hierarchical_label "CLS" (shape output) (at 185.42 110.49 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 3d7ba198-39e8-4311-a400-9c1ec0405fc8)
+  )
   (hierarchical_label "TXD" (shape output) (at 162.56 120.65 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 40fe3632-50dc-4e04-9359-ffb9eb0b6c2f)
   )
-  (hierarchical_label "ENC_P0" (shape input) (at 162.56 125.73 0) (fields_autoplaced)
+  (hierarchical_label "A_FB" (shape input) (at 185.42 113.03 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 64e78f78-7fbd-4784-a4a5-6445196939de)
+    (uuid 4f3cc465-33de-4a96-92c6-ffe344e976e7)
+  )
+  (hierarchical_label "OPN" (shape output) (at 185.42 107.95 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 5d0bdb14-3c26-4014-8c50-9d995162d3cd)
   )
   (hierarchical_label "MOSI1" (shape output) (at 123.19 125.73 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
@@ -1456,10 +1380,6 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 6581b64e-bdae-49ff-babb-50fb6e89c5a3)
   )
-  (hierarchical_label "ALS" (shape input) (at 162.56 107.95 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 6ce5fede-fde3-4d08-8597-271af0ce3f22)
-  )
   (hierarchical_label "SCL" (shape bidirectional) (at 123.19 120.65 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 78e142cb-6089-471c-bc3e-d5ec147068f5)
@@ -1468,17 +1388,25 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 8a4b751a-92ce-4c2a-b779-bfea7280b18b)
   )
-  (hierarchical_label "ENC_A" (shape input) (at 256.54 151.13 0) (fields_autoplaced)
+  (hierarchical_label "INT1" (shape input) (at 162.56 125.73 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 8a5449df-6975-4413-96a3-611c7f5e9154)
+    (uuid 8d112d39-8491-4701-bc41-bbd1e213def4)
   )
   (hierarchical_label "SCL" (shape bidirectional) (at 210.82 120.65 270) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 9b7b9d22-f9ca-4043-a151-c2b6b2266ac4)
   )
+  (hierarchical_label "B_EN" (shape output) (at 185.42 105.41 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid ac2c11da-d13b-4e2d-8799-55e566ee9983)
+  )
   (hierarchical_label "CD" (shape input) (at 162.56 123.19 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid bf2b4b2c-1c51-40ce-a76f-ad2387bae8bf)
+  )
+  (hierarchical_label "B_FB" (shape input) (at 185.42 115.57 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid d8daa1a9-90bd-4ce8-af92-626ecf246120)
   )
   (hierarchical_label "SDA" (shape bidirectional) (at 123.19 118.11 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
@@ -1496,9 +1424,9 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid eaf90134-016f-41e2-9b62-69e631ee255b)
   )
-  (hierarchical_label "ENC_P1" (shape input) (at 162.56 110.49 0) (fields_autoplaced)
+  (hierarchical_label "A_EN" (shape output) (at 185.42 102.87 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid f79a6991-24c9-4015-9fc6-ec89a80dff35)
+    (uuid f8a2d017-92f8-4fee-8ca1-0aeb860572c3)
   )
 
   (symbol (lib_id "power:+5V") (at 254 24.13 0) (unit 1)
@@ -1518,7 +1446,7 @@
     )
     (pin "1" (uuid 14366f9e-66c6-4a80-8fbb-55fb88ccfe04))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR036") (unit 1)
         )
@@ -1548,7 +1476,7 @@
     )
     (pin "1" (uuid 5162f646-883c-45a9-bca9-95765b2d736d))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR022") (unit 1)
         )
@@ -1579,7 +1507,7 @@
     (pin "1" (uuid b256aa7f-7e09-4f99-a7db-919094104f10))
     (pin "2" (uuid 9187f047-c51b-4376-8e88-5ca8873fa7d4))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "R8") (unit 1)
         )
@@ -1609,7 +1537,7 @@
     )
     (pin "1" (uuid fc5e5fde-3fc1-4a84-b983-fb3a575d0238))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR039") (unit 1)
         )
@@ -1640,7 +1568,7 @@
     (pin "1" (uuid 3275f0bc-66ec-4178-971a-54662c4a707d))
     (pin "2" (uuid ab981aaa-ac4f-465e-84c3-5d58cdfc6b59))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "R7") (unit 1)
         )
@@ -1670,7 +1598,7 @@
     )
     (pin "1" (uuid ab4086d5-9717-4f34-8aa1-4af11062265c))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR043") (unit 1)
         )
@@ -1701,7 +1629,7 @@
     (pin "1" (uuid 06b367ff-96b2-45a4-9a41-f80adb35825f))
     (pin "2" (uuid 19e40c14-29b4-4743-85e6-3f1278d25814))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "C7") (unit 1)
         )
@@ -1731,7 +1659,7 @@
     )
     (pin "1" (uuid 6361582f-0d58-48e2-a7d8-83213a5a7099))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR024") (unit 1)
         )
@@ -1762,7 +1690,7 @@
     (pin "1" (uuid 3438a123-392d-4375-9ee2-244219f2a0a7))
     (pin "2" (uuid bcebd2a5-cffc-47ac-9653-db5a3951a3bf))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "D1") (unit 1)
         )
@@ -1823,7 +1751,7 @@
     (pin "8" (uuid c649a76b-311a-4cdf-b0cf-8989bdd59149))
     (pin "9" (uuid 8358dc00-0fe2-4fb0-9327-20276f45f409))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "U3") (unit 1)
         )
@@ -1853,7 +1781,7 @@
     )
     (pin "1" (uuid 212bd578-a53e-49b5-be40-3b9ac29af9b3))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR027") (unit 1)
         )
@@ -1861,37 +1789,6 @@
       (project "heating_controller"
         (path "/cd8140cb-ee2c-44d2-bab6-19a75f861228/59b05adf-cde4-462f-b25f-a69ae03c4b86"
           (reference "#PWR0142") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 241.3 157.48 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 272ab872-3f04-4db6-8512-09d08b867ab4)
-    (property "Reference" "C22" (at 244.221 156.6453 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "C" (at 244.221 159.1822 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 242.2652 161.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 241.3 157.48 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d1524b66-f844-4179-9c22-12445d01960a))
-    (pin "2" (uuid 78796703-c3f1-461b-8dbc-2fc91e485cae))
-    (instances
-      (project "knob_base"
-        (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
-          (reference "C22") (unit 1)
-        )
-      )
-      (project "heating_controller"
-        (path "/cd8140cb-ee2c-44d2-bab6-19a75f861228/59b05adf-cde4-462f-b25f-a69ae03c4b86"
-          (reference "C9") (unit 1)
         )
       )
     )
@@ -1914,7 +1811,7 @@
     )
     (pin "1" (uuid 1ee700b9-2613-4c64-9dd2-07fffdca7399))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR08") (unit 1)
         )
@@ -1922,37 +1819,6 @@
       (project "heating_controller"
         (path "/cd8140cb-ee2c-44d2-bab6-19a75f861228/59b05adf-cde4-462f-b25f-a69ae03c4b86"
           (reference "#PWR0147") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 254 144.78 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 366854b5-eae5-4b84-b10f-e4f2c56be212)
-    (property "Reference" "R26" (at 255.778 143.9453 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "R" (at 255.778 146.4822 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 252.222 144.78 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 254 144.78 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 47024163-7d18-4c83-a474-77b610e222f1))
-    (pin "2" (uuid 09592354-3404-460a-9930-4d5abca61748))
-    (instances
-      (project "knob_base"
-        (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
-          (reference "R26") (unit 1)
-        )
-      )
-      (project "heating_controller"
-        (path "/cd8140cb-ee2c-44d2-bab6-19a75f861228/59b05adf-cde4-462f-b25f-a69ae03c4b86"
-          (reference "R27") (unit 1)
         )
       )
     )
@@ -1976,7 +1842,7 @@
     (pin "1" (uuid f3db66de-e5e1-4926-a1a3-839e0b15c09c))
     (pin "2" (uuid 2232759b-51c1-48ad-a099-b9341d56213f))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "R28") (unit 1)
         )
@@ -2006,7 +1872,7 @@
     )
     (pin "1" (uuid 2622f77a-67f0-428b-a7e7-9abc6546bdd8))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR026") (unit 1)
         )
@@ -2036,7 +1902,7 @@
     )
     (pin "1" (uuid 0b6a2261-574a-43d1-9e0d-bcdff715d8eb))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR041") (unit 1)
         )
@@ -2067,7 +1933,7 @@
     (pin "1" (uuid 00a52572-21c9-4a1b-9899-7c872458d96d))
     (pin "2" (uuid ae57bf02-b607-4847-b533-6d0325e5a685))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "C6") (unit 1)
         )
@@ -2098,7 +1964,7 @@
     (pin "1" (uuid 7f8e0702-e0c7-4f57-9cf7-2e6d28fcf1f0))
     (pin "2" (uuid d419e5e6-2b13-4c9c-bde1-586583ee6710))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "R27") (unit 1)
         )
@@ -2106,37 +1972,6 @@
       (project "heating_controller"
         (path "/cd8140cb-ee2c-44d2-bab6-19a75f861228/59b05adf-cde4-462f-b25f-a69ae03c4b86"
           (reference "R26") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 247.65 151.13 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 486e2221-c510-46d6-89dd-3946f1d40476)
-    (property "Reference" "R24" (at 247.65 146.4142 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "R" (at 247.65 148.9511 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 247.65 152.908 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 247.65 151.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 628d0e72-c13f-4eba-9593-63349d5e546f))
-    (pin "2" (uuid 07c98774-951f-4628-90cd-2fd9a696acbf))
-    (instances
-      (project "knob_base"
-        (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
-          (reference "R24") (unit 1)
-        )
-      )
-      (project "heating_controller"
-        (path "/cd8140cb-ee2c-44d2-bab6-19a75f861228/59b05adf-cde4-462f-b25f-a69ae03c4b86"
-          (reference "R25") (unit 1)
         )
       )
     )
@@ -2160,7 +1995,7 @@
     (pin "1" (uuid a614626e-e4c2-44ac-9b8b-32f2c21d6d5c))
     (pin "2" (uuid 0f2d2511-f100-499a-bbd4-3e7d7d847905))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "R9") (unit 1)
         )
@@ -2191,7 +2026,7 @@
     (pin "1" (uuid b826cf83-be84-454f-9658-4b583e16ccc9))
     (pin "2" (uuid 3b5fa48e-672b-4e46-8532-89125a237ba0))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "C1") (unit 1)
         )
@@ -2199,36 +2034,6 @@
       (project "heating_controller"
         (path "/cd8140cb-ee2c-44d2-bab6-19a75f861228/59b05adf-cde4-462f-b25f-a69ae03c4b86"
           (reference "C3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 254 121.92 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 50246554-2d32-489e-8eae-13010f642b45)
-    (property "Reference" "#PWR04" (at 254 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 254 116.84 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 254 121.92 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 254 121.92 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8eb9f39e-296b-4050-b946-e8ce6d828c6c))
-    (instances
-      (project "knob_base"
-        (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
-          (reference "#PWR04") (unit 1)
-        )
-      )
-      (project "heating_controller"
-        (path "/cd8140cb-ee2c-44d2-bab6-19a75f861228/59b05adf-cde4-462f-b25f-a69ae03c4b86"
-          (reference "#PWR0147") (unit 1)
         )
       )
     )
@@ -2252,7 +2057,7 @@
     (pin "1" (uuid 6d927dcc-8f81-4c02-9b13-dbe59f8c4ffb))
     (pin "2" (uuid 1c35d508-35af-456a-9eab-d2db34b6d2d8))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "C3") (unit 1)
         )
@@ -2282,7 +2087,7 @@
     )
     (pin "1" (uuid 8eb7b6ff-58c2-4c0d-b128-d4a792cecc5c))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR031") (unit 1)
         )
@@ -2312,7 +2117,7 @@
     )
     (pin "1" (uuid 4545c80e-71ce-45c2-bf86-49588c99321c))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR025") (unit 1)
         )
@@ -2342,7 +2147,7 @@
     )
     (pin "1" (uuid f5162ff1-e9a3-4755-a575-3e5c13b55820))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR035") (unit 1)
         )
@@ -2372,7 +2177,7 @@
     )
     (pin "1" (uuid a5f1e53c-b056-419f-9e04-79ed7eaf4cb0))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR017") (unit 1)
         )
@@ -2380,36 +2185,6 @@
       (project "heating_controller"
         (path "/cd8140cb-ee2c-44d2-bab6-19a75f861228/59b05adf-cde4-462f-b25f-a69ae03c4b86"
           (reference "#PWR0137") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 241.3 161.29 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 63588977-4095-4e77-9437-7fd995638ac8)
-    (property "Reference" "#PWR03" (at 241.3 167.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 241.3 165.7334 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 241.3 161.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 241.3 161.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid cc8a150c-15da-4831-926f-8d50685f8937))
-    (instances
-      (project "knob_base"
-        (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
-          (reference "#PWR03") (unit 1)
-        )
-      )
-      (project "heating_controller"
-        (path "/cd8140cb-ee2c-44d2-bab6-19a75f861228/59b05adf-cde4-462f-b25f-a69ae03c4b86"
-          (reference "#PWR0135") (unit 1)
         )
       )
     )
@@ -2433,7 +2208,7 @@
     (pin "1" (uuid 73451d86-d28a-4794-b43d-80d7725c2f6e))
     (pin "2" (uuid 2d4f9122-c389-4ab1-a70f-d291d7b53746))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "C2") (unit 1)
         )
@@ -2463,7 +2238,7 @@
     )
     (pin "1" (uuid 7cc54863-2fec-4263-ac14-def074fce07d))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR037") (unit 1)
         )
@@ -2494,7 +2269,7 @@
     (pin "1" (uuid 310ac4f4-3cc3-4aca-a763-c861218cd301))
     (pin "2" (uuid 46c6f009-aa13-42bb-a160-826a616536f9))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "C5") (unit 1)
         )
@@ -2525,7 +2300,7 @@
     (pin "1" (uuid 114595c3-2c06-485b-ba05-29cf181bc91f))
     (pin "2" (uuid 0dbab07b-cd08-4e05-b089-f3596b37b4a0))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "R10") (unit 1)
         )
@@ -2555,7 +2330,7 @@
     )
     (pin "1" (uuid 32425378-5ef7-4290-be61-b68fce47d40d))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR023") (unit 1)
         )
@@ -2585,7 +2360,7 @@
     )
     (pin "1" (uuid adefd936-5381-49d9-99ac-e4ab4d44929f))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR042") (unit 1)
         )
@@ -2616,7 +2391,7 @@
     (pin "1" (uuid 58afec7e-55bf-4e4b-8120-f58f509b2bce))
     (pin "2" (uuid 42e2c446-988c-4dcb-a577-55bd825a7349))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "D2") (unit 1)
         )
@@ -2624,37 +2399,6 @@
       (project "heating_controller"
         (path "/cd8140cb-ee2c-44d2-bab6-19a75f861228/59b05adf-cde4-462f-b25f-a69ae03c4b86"
           (reference "D18") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 254 125.73 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 800416c0-ace8-4f29-95aa-44cdec07074d)
-    (property "Reference" "R25" (at 255.778 124.8953 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "R" (at 255.778 127.4322 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 252.222 125.73 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 254 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid bee4dab9-75a0-4088-8d3d-9cdd0eedbb7b))
-    (pin "2" (uuid 7b37a436-16f8-4193-a521-22e7219b199c))
-    (instances
-      (project "knob_base"
-        (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
-          (reference "R25") (unit 1)
-        )
-      )
-      (project "heating_controller"
-        (path "/cd8140cb-ee2c-44d2-bab6-19a75f861228/59b05adf-cde4-462f-b25f-a69ae03c4b86"
-          (reference "R26") (unit 1)
         )
       )
     )
@@ -2677,7 +2421,7 @@
     )
     (pin "1" (uuid 4dbeec85-7665-427f-9b68-3ac65ac242c2))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR019") (unit 1)
         )
@@ -2708,7 +2452,7 @@
     (pin "1" (uuid 9b68cd33-8f5a-496b-ba4e-e179ffe91eea))
     (pin "2" (uuid 2cce91f6-089f-4e11-b314-3615668d41df))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "R13") (unit 1)
         )
@@ -2739,7 +2483,7 @@
     (pin "1" (uuid 55fe7139-8d5a-42cd-8a5b-fe4660bd4f4b))
     (pin "2" (uuid ae35612c-4d16-4be3-814e-645eec3daf1c))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "FB1") (unit 1)
         )
@@ -2769,7 +2513,7 @@
     )
     (pin "1" (uuid 0a8ac76b-96bd-4be1-aaf7-33b2fc3b83f8))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR018") (unit 1)
         )
@@ -2799,7 +2543,7 @@
     )
     (pin "1" (uuid 559f1b66-5687-425f-82d6-50212cef25a3))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR030") (unit 1)
         )
@@ -2807,67 +2551,6 @@
       (project "heating_controller"
         (path "/cd8140cb-ee2c-44d2-bab6-19a75f861228/59b05adf-cde4-462f-b25f-a69ae03c4b86"
           (reference "#PWR0152") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 247.65 132.08 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid a2f2dc3a-2c98-4f41-a361-7444dfe28768)
-    (property "Reference" "R23" (at 247.65 127.3642 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "R" (at 247.65 129.9011 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 247.65 133.858 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 247.65 132.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid afce1e26-5839-439b-a749-c305482c0b97))
-    (pin "2" (uuid 71207c71-2f68-461e-bd40-cedf9e0be765))
-    (instances
-      (project "knob_base"
-        (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
-          (reference "R23") (unit 1)
-        )
-      )
-      (project "heating_controller"
-        (path "/cd8140cb-ee2c-44d2-bab6-19a75f861228/59b05adf-cde4-462f-b25f-a69ae03c4b86"
-          (reference "R24") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 254 140.97 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid a5d41a67-804c-423c-8163-62a68dba28d6)
-    (property "Reference" "#PWR05" (at 254 144.78 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 254 135.89 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 254 140.97 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 254 140.97 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 919092ba-48b0-49fa-af9f-a64351c6b1af))
-    (instances
-      (project "knob_base"
-        (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
-          (reference "#PWR05") (unit 1)
-        )
-      )
-      (project "heating_controller"
-        (path "/cd8140cb-ee2c-44d2-bab6-19a75f861228/59b05adf-cde4-462f-b25f-a69ae03c4b86"
-          (reference "#PWR0130") (unit 1)
         )
       )
     )
@@ -2891,7 +2574,7 @@
     (pin "1" (uuid fb49c947-7d34-4993-bc88-5ae54652d283))
     (pin "2" (uuid 1a75f7c4-cba4-4503-b366-ab691e57fda0))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "SW3") (unit 1)
         )
@@ -2921,7 +2604,7 @@
     )
     (pin "1" (uuid e593770d-5508-4d47-8010-f034b272fd87))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR016") (unit 1)
         )
@@ -2951,7 +2634,7 @@
     )
     (pin "1" (uuid fc1fd53e-6ee6-4aae-9ce3-b0c0aa902687))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR038") (unit 1)
         )
@@ -2981,7 +2664,7 @@
     )
     (pin "1" (uuid caa3292b-ce53-405a-b1b3-64da844c47ad))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR021") (unit 1)
         )
@@ -3011,7 +2694,7 @@
     )
     (pin "1" (uuid bbaaa028-5818-4f2b-81c1-e0aadd2e7fbc))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR020") (unit 1)
         )
@@ -3041,7 +2724,7 @@
     )
     (pin "1" (uuid cdcf9b4c-0a1d-4907-8b2c-2113e795a93f))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR033") (unit 1)
         )
@@ -3072,7 +2755,7 @@
     (pin "1" (uuid 48e8b43b-1de0-4f56-896e-a6a71e6357b2))
     (pin "2" (uuid eb53bf2b-620f-4d87-97c6-6da61477fa5c))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "SW4") (unit 1)
         )
@@ -3103,7 +2786,7 @@
     (pin "1" (uuid c1f82fe5-114f-4648-81a4-b7ef9c6dd572))
     (pin "2" (uuid d4c9532d-62f5-4444-884e-eee5f2027b6b))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "C4") (unit 1)
         )
@@ -3134,7 +2817,7 @@
     (pin "1" (uuid fabf1bcb-b162-4f1b-bc76-f1452d5f0f9c))
     (pin "2" (uuid 0d1352ff-d265-4396-956b-367c36bd1d89))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "SW2") (unit 1)
         )
@@ -3142,36 +2825,6 @@
       (project "heating_controller"
         (path "/cd8140cb-ee2c-44d2-bab6-19a75f861228/59b05adf-cde4-462f-b25f-a69ae03c4b86"
           (reference "SW1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 241.3 142.24 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid bb1e610d-e8cf-4911-b292-847f7ff5e947)
-    (property "Reference" "#PWR02" (at 241.3 148.59 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 241.3 146.6834 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 241.3 142.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 241.3 142.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 538947c8-b005-4361-98a5-9f26150e9658))
-    (instances
-      (project "knob_base"
-        (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
-          (reference "#PWR02") (unit 1)
-        )
-      )
-      (project "heating_controller"
-        (path "/cd8140cb-ee2c-44d2-bab6-19a75f861228/59b05adf-cde4-462f-b25f-a69ae03c4b86"
-          (reference "#PWR0131") (unit 1)
         )
       )
     )
@@ -3194,7 +2847,7 @@
     )
     (pin "1" (uuid 2af2c308-d848-44f0-bb05-79d6c3c6cbb6))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR045") (unit 1)
         )
@@ -3202,37 +2855,6 @@
       (project "heating_controller"
         (path "/cd8140cb-ee2c-44d2-bab6-19a75f861228/59b05adf-cde4-462f-b25f-a69ae03c4b86"
           (reference "#PWR0185") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 241.3 138.43 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid d678da12-e659-4a5d-b088-e4ae9d54e249)
-    (property "Reference" "C21" (at 244.221 137.5953 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "C" (at 244.221 140.1322 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 242.2652 142.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 241.3 138.43 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b8820327-3c5c-4054-860a-75ba55e79817))
-    (pin "2" (uuid feb5e6d7-e546-4ee7-804c-a225d50c1485))
-    (instances
-      (project "knob_base"
-        (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
-          (reference "C21") (unit 1)
-        )
-      )
-      (project "heating_controller"
-        (path "/cd8140cb-ee2c-44d2-bab6-19a75f861228/59b05adf-cde4-462f-b25f-a69ae03c4b86"
-          (reference "C8") (unit 1)
         )
       )
     )
@@ -3256,7 +2878,7 @@
     (pin "1" (uuid e281ea32-1e24-475a-996a-dec1cd9e4b98))
     (pin "2" (uuid 4ed0201c-11c8-4196-9f77-e3063201eb27))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "R11") (unit 1)
         )
@@ -3286,7 +2908,7 @@
     )
     (pin "1" (uuid 7b7eea8e-c265-4bbd-bcaf-8ef5a3a04200))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR044") (unit 1)
         )
@@ -3317,7 +2939,7 @@
     (pin "1" (uuid 0ad20bd4-e576-4ff3-9f5d-8cdff44ed756))
     (pin "2" (uuid ac6e4ecc-789d-4c66-be5f-181f52d2877d))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "R12") (unit 1)
         )
@@ -3347,7 +2969,7 @@
     )
     (pin "1" (uuid 71a89ca6-19d8-43f9-9273-8048b7ec7c26))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR09") (unit 1)
         )
@@ -3369,7 +2991,7 @@
     (property "Value" "AVR-ISP-6" (at 139.7 33.0199 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "project_lib:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" (at 142.24 31.75 90)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" (at 142.24 31.75 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" " ~" (at 116.205 46.99 0)
@@ -3382,7 +3004,7 @@
     (pin "5" (uuid e14b053c-598c-4436-8dfb-c911fca42302))
     (pin "6" (uuid cd0e500a-74c1-4434-9bbb-1db8b596de77))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "J10") (unit 1)
         )
@@ -3413,7 +3035,7 @@
     (pin "1" (uuid 21ff2d1a-4ad2-4a32-a45f-af4f614b29ef))
     (pin "2" (uuid 01fcd799-8ecd-4956-866c-f03104c7433f))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "C8") (unit 1)
         )
@@ -3444,7 +3066,7 @@
     (pin "1" (uuid 3bb75ded-7b90-498e-891e-5828b5c9b6b9))
     (pin "2" (uuid 13c67e73-f323-4d8f-ace9-1fc30be8943c))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "C9") (unit 1)
         )
@@ -3474,7 +3096,7 @@
     )
     (pin "1" (uuid adbf8b4c-e3ac-4396-9320-4da0e6757e38))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR040") (unit 1)
         )
@@ -3504,7 +3126,7 @@
     )
     (pin "1" (uuid 668fd109-fd43-44c0-ac0d-580a535ffc11))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR032") (unit 1)
         )
@@ -3537,7 +3159,7 @@
     (pin "3" (uuid 83a3a1b3-1af9-47b9-9b8d-400d221674a9))
     (pin "4" (uuid e85145b3-f87d-4216-819a-4a1ebf81000d))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "Y1") (unit 1)
         )
@@ -3567,7 +3189,7 @@
     )
     (pin "1" (uuid a6e39f6b-3746-4bb2-90ea-5aaba6c473e8))
     (instances
-      (project "knob_base"
+      (project "room_hub"
         (path "/14823aa1-da0b-4141-8bca-39be6358cf70/528a74ed-755c-4e9c-a9e7-db485a4b937f"
           (reference "#PWR034") (unit 1)
         )

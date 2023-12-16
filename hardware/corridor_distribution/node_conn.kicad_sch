@@ -444,7 +444,7 @@
     (property "Reference" "D6" (at 69.85 58.42 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "D" (at 69.85 60.96 0)
+    (property "Value" "SM05" (at 69.85 60.96 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering" (at 69.85 72.39 0)
@@ -453,11 +453,17 @@
     (property "Datasheet" "https://www.littelfuse.com/~/media/electronics/datasheets/tvs_diode_arrays/littelfuse_tvs_diode_array_sm712_datasheet.pdf.pdf" (at 73.66 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C460613" (at 69.85 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "100" (at 69.85 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid becc19da-3197-4c8c-a61c-1060edfe1371))
     (pin "2" (uuid 7176dabd-11e7-4f7e-b0a3-28a4e40e7644))
     (pin "3" (uuid 1c9e7f60-aa3d-4407-a7fd-7b58ba96d556))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/1aca686d-2447-4f34-be8b-d923e9c8fa6d/a73f9a82-c47b-4816-a401-331a91601895"
           (reference "D6") (unit 1)
         )
@@ -492,7 +498,7 @@
   )
 
   (symbol (lib_id "Connector:Screw_Terminal_01x06") (at 127 78.74 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 29b650f4-8901-44aa-a6f3-635f8952f6c4)
     (property "Reference" "J6" (at 127 66.1502 0)
       (effects (font (size 1.27 1.27)))
@@ -506,6 +512,12 @@
     (property "Datasheet" "~" (at 127 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "" (at 127 78.74 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "" (at 127 78.74 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 6709f2a3-31c8-4aeb-ac9e-7f91e3065109))
     (pin "2" (uuid a5464354-225f-4d17-bbb4-85f70cff5c98))
     (pin "3" (uuid 0ef43a4c-9d76-44b4-ab38-68fe1a738c59))
@@ -513,7 +525,7 @@
     (pin "5" (uuid da8e4134-f066-4fc6-be80-768aedb5dfaa))
     (pin "6" (uuid e64e0600-b35a-46c8-9092-c31ebc8084e3))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/1aca686d-2447-4f34-be8b-d923e9c8fa6d/f09d4f16-a43e-4d70-add6-2630777eb0c8"
           (reference "J6") (unit 1)
         )
@@ -548,7 +560,7 @@
     (property "Reference" "D14" (at 69.85 77.47 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "D" (at 69.85 80.01 0)
+    (property "Value" "SM05" (at 69.85 80.01 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering" (at 69.85 91.44 0)
@@ -557,11 +569,17 @@
     (property "Datasheet" "https://www.littelfuse.com/~/media/electronics/datasheets/tvs_diode_arrays/littelfuse_tvs_diode_array_sm712_datasheet.pdf.pdf" (at 66.04 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C460613" (at 69.85 82.55 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "100" (at 69.85 82.55 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid f96e9d93-0ac6-451d-9831-e7950876c00d))
     (pin "2" (uuid b0815f78-6b09-4352-b2fa-e4a6b9fb9574))
     (pin "3" (uuid 586f9e7f-8079-43c5-89d3-00294d39b9f5))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/1aca686d-2447-4f34-be8b-d923e9c8fa6d/a73f9a82-c47b-4816-a401-331a91601895"
           (reference "D14") (unit 1)
         )
@@ -612,7 +630,7 @@
     )
     (pin "1" (uuid 7bfe232e-76e6-4e64-8a0a-5eba5d7b1afd))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/1aca686d-2447-4f34-be8b-d923e9c8fa6d/f09d4f16-a43e-4d70-add6-2630777eb0c8"
           (reference "#PWR0112") (unit 1)
         )
@@ -658,7 +676,7 @@
     )
     (pin "1" (uuid afef9126-8da1-485f-a428-1f053b84540e))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/1aca686d-2447-4f34-be8b-d923e9c8fa6d/f09d4f16-a43e-4d70-add6-2630777eb0c8"
           (reference "#PWR048") (unit 1)
         )
@@ -704,7 +722,7 @@
     )
     (pin "1" (uuid 6bf65bd3-b84f-4a67-87d3-950238cf01b3))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/1aca686d-2447-4f34-be8b-d923e9c8fa6d/f09d4f16-a43e-4d70-add6-2630777eb0c8"
           (reference "#PWR0111") (unit 1)
         )
@@ -750,7 +768,7 @@
     )
     (pin "1" (uuid 6613d517-030b-4eda-93bc-b278ccc4725e))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/1aca686d-2447-4f34-be8b-d923e9c8fa6d/f09d4f16-a43e-4d70-add6-2630777eb0c8"
           (reference "#PWR056") (unit 1)
         )

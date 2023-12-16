@@ -134,7 +134,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole") (at 38.1 38.1 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5ba2783b-51b2-4cde-9d4b-01629d842064)
     (property "Reference" "H1" (at 40.64 37.2653 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -148,8 +148,14 @@
     (property "Datasheet" "~" (at 38.1 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "" (at 38.1 38.1 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "" (at 38.1 38.1 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93"
           (reference "H1") (unit 1)
         )
@@ -158,7 +164,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole") (at 38.1 44.45 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fec9fdd7-d09b-4844-bacb-cb9567f22f1b)
     (property "Reference" "H2" (at 40.64 43.6153 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -172,8 +178,14 @@
     (property "Datasheet" "~" (at 38.1 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "" (at 38.1 44.45 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "" (at 38.1 44.45 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93"
           (reference "H2") (unit 1)
         )
@@ -200,7 +212,7 @@
       (uuid 3de846f6-f110-4f39-9282-4caa10e73058)
     )
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93" (page "37"))
       )
     )
@@ -229,7 +241,7 @@
       (uuid bd25c05d-8abb-4b20-aba3-67adb39ecdfc)
     )
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93" (page "7"))
       )
     )
@@ -258,7 +270,7 @@
       (uuid a66b50d6-9707-4c2c-b070-fc8e626f4975)
     )
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93" (page "39"))
       )
     )
@@ -287,7 +299,7 @@
       (uuid 86ffd083-31a9-46c1-99f3-c6c14226b378)
     )
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93" (page "40"))
       )
     )
@@ -316,7 +328,7 @@
       (uuid e7b0e606-01df-44d4-af12-b15b221474ed)
     )
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93" (page "38"))
       )
     )
@@ -333,7 +345,7 @@
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93" (page "36"))
       )
     )

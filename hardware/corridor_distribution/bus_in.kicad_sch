@@ -130,6 +130,67 @@
         )
       )
     )
+    (symbol "Connector_Generic:Conn_01x04" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "J" (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "Conn_01x04" (at 0 -7.62 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "connector" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "Conn_01x04_1_1"
+        (rectangle (start -1.27 -4.953) (end 0 -5.207)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (rectangle (start -1.27 -2.413) (end 0 -2.667)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (rectangle (start -1.27 0.127) (end 0 -0.127)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (rectangle (start -1.27 2.667) (end 0 2.413)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (rectangle (start -1.27 3.81) (end 1.27 -6.35)
+          (stroke (width 0.254) (type default))
+          (fill (type background))
+        )
+        (pin passive line (at -5.08 2.54 0) (length 3.81)
+          (name "Pin_1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 0 0) (length 3.81)
+          (name "Pin_2" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 -2.54 0) (length 3.81)
+          (name "Pin_3" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 -5.08 0) (length 3.81)
+          (name "Pin_4" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Connector_Generic:Conn_02x03_Odd_Even" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 1.27 5.08 0)
         (effects (font (size 1.27 1.27)))
@@ -1042,17 +1103,17 @@
   (junction (at 66.04 105.41) (diameter 0) (color 0 0 0 0)
     (uuid 7b8c32e9-e319-4f00-bf07-9bc87d9f9a27)
   )
-  (junction (at 142.24 130.81) (diameter 0) (color 0 0 0 0)
-    (uuid 8718f829-1f25-4d06-9e8a-d6db707d4d85)
+  (junction (at 198.12 116.84) (diameter 0) (color 0 0 0 0)
+    (uuid 8323ee25-f3fe-4bd6-be0d-f6dd20494f10)
   )
   (junction (at 231.14 116.84) (diameter 0) (color 0 0 0 0)
     (uuid a22f0235-21e6-401e-893a-50ef3a707342)
   )
+  (junction (at 170.18 116.84) (diameter 0) (color 0 0 0 0)
+    (uuid aaef434c-4855-4e30-ac2a-b36b7d2c0abf)
+  )
   (junction (at 67.31 133.35) (diameter 0) (color 0 0 0 0)
     (uuid b343a6ef-424b-49d5-9bf3-5049da19a864)
-  )
-  (junction (at 195.58 116.84) (diameter 0) (color 0 0 0 0)
-    (uuid c7a6c276-5d95-4aaa-a0be-1006da88894b)
   )
   (junction (at 107.95 19.05) (diameter 0) (color 0 0 0 0)
     (uuid f40da262-980b-4b8f-bb61-5304e973ad0b)
@@ -1082,10 +1143,6 @@
   (wire (pts (xy 185.42 100.33) (xy 185.42 102.87))
     (stroke (width 0) (type default))
     (uuid 09871b2c-432b-456f-8c01-5fdcdb86fae7)
-  )
-  (wire (pts (xy 142.24 130.81) (xy 144.78 130.81))
-    (stroke (width 0) (type default))
-    (uuid 0a6d941a-4c24-4074-897a-8b67d63b17fc)
   )
   (wire (pts (xy 50.8 100.33) (xy 57.15 100.33))
     (stroke (width 0) (type default))
@@ -1123,6 +1180,11 @@
     (stroke (width 0) (type default))
     (uuid 1dec5561-a016-4a7f-a315-48615ddd7d44)
   )
+
+  (wire (pts (xy 167.64 116.84) (xy 170.18 116.84))
+    (stroke (width 0) (type default))
+    (uuid 1eb118e2-928e-4cd9-b69b-32c976cc7bf6)
+  )
   (bus (pts (xy 85.09 19.05) (xy 107.95 19.05))
     (stroke (width 0) (type default))
     (uuid 2680254f-c07e-4b23-9df5-a21a5d8c7a86)
@@ -1148,10 +1210,6 @@
     (stroke (width 0) (type default))
     (uuid 2f8594e4-bd89-49cd-be39-0059e2b707da)
   )
-  (wire (pts (xy 144.78 102.87) (xy 147.32 102.87))
-    (stroke (width 0) (type default))
-    (uuid 32ceaa4b-d1a5-44f0-a8ed-d49253218612)
-  )
   (wire (pts (xy 102.87 31.75) (xy 105.41 31.75))
     (stroke (width 0) (type default))
     (uuid 32d9d0b5-7d05-4be6-a3ed-7b170fafc94b)
@@ -1160,9 +1218,9 @@
     (stroke (width 0) (type default))
     (uuid 384db47a-95f1-4bd4-a044-cb3ce24851aa)
   )
-  (wire (pts (xy 193.04 116.84) (xy 195.58 116.84))
+  (wire (pts (xy 54.61 58.42) (xy 57.15 58.42))
     (stroke (width 0) (type default))
-    (uuid 397f949e-eae0-43fb-94d4-a646cc9c27c0)
+    (uuid 39f650f7-b6ef-4e51-b111-48fd0d73cbe5)
   )
   (wire (pts (xy 254 116.84) (xy 266.7 116.84))
     (stroke (width 0) (type default))
@@ -1171,6 +1229,10 @@
   (wire (pts (xy 57.15 100.33) (xy 81.28 100.33))
     (stroke (width 0) (type default))
     (uuid 45aac7a9-cf9b-4455-95aa-9206b791179d)
+  )
+  (wire (pts (xy 170.18 116.84) (xy 175.26 116.84))
+    (stroke (width 0) (type default))
+    (uuid 4647436a-0669-4360-8e82-3bf7694369a3)
   )
   (wire (pts (xy 114.3 100.33) (xy 111.76 100.33))
     (stroke (width 0) (type default))
@@ -1200,13 +1262,17 @@
     (stroke (width 0) (type default))
     (uuid 65849af1-c00a-42df-8686-f14cbaf32bf0)
   )
+  (wire (pts (xy 54.61 60.96) (xy 54.61 63.5))
+    (stroke (width 0) (type default))
+    (uuid 67708755-5ade-4e3f-97e6-621947ba24a6)
+  )
   (wire (pts (xy 67.31 130.81) (xy 67.31 133.35))
     (stroke (width 0) (type default))
     (uuid 680f3210-49a8-46d6-97ad-58db8977ab84)
   )
-  (wire (pts (xy 144.78 97.79) (xy 147.32 97.79))
+  (wire (pts (xy 167.64 114.3) (xy 167.64 116.84))
     (stroke (width 0) (type default))
-    (uuid 7097b88a-2452-4c64-943f-e3d00bf2116f)
+    (uuid 6dc2ae0c-d05d-43a7-ab4c-d9a664246b81)
   )
   (wire (pts (xy 228.6 116.84) (xy 231.14 116.84))
     (stroke (width 0) (type default))
@@ -1220,18 +1286,6 @@
     (stroke (width 0) (type default))
     (uuid 8731c436-d939-4e34-bc9b-77af716d7864)
   )
-  (wire (pts (xy 195.58 114.3) (xy 195.58 116.84))
-    (stroke (width 0) (type default))
-    (uuid 8b96e3ee-3cf0-4388-8f58-f13afa936368)
-  )
-  (wire (pts (xy 144.78 90.17) (xy 144.78 92.71))
-    (stroke (width 0) (type default))
-    (uuid 8f2badca-6ebf-4714-8c72-be01b2fffcdf)
-  )
-  (wire (pts (xy 139.7 130.81) (xy 142.24 130.81))
-    (stroke (width 0) (type default))
-    (uuid 917163c7-35d6-4c46-a5b2-22c6b7873d6a)
-  )
   (wire (pts (xy 231.14 116.84) (xy 231.14 114.3))
     (stroke (width 0) (type default))
     (uuid 924eadba-dbf6-4aa9-b225-b56173e78824)
@@ -1244,18 +1298,26 @@
     (stroke (width 0) (type default))
     (uuid 96c8ab4d-f2aa-4442-a062-8a435d1fd52d)
   )
+  (wire (pts (xy 200.66 114.3) (xy 200.66 116.84))
+    (stroke (width 0) (type default))
+    (uuid 9a5edb7f-e00c-41fa-8da6-bfbcacc1fc07)
+  )
   (bus (pts (xy 48.26 97.79) (xy 48.26 102.87))
     (stroke (width 0) (type default))
     (uuid 9abab478-9f5b-40ee-a282-3aeb2925d344)
   )
 
-  (wire (pts (xy 142.24 128.27) (xy 142.24 130.81))
+  (wire (pts (xy 54.61 55.88) (xy 57.15 55.88))
     (stroke (width 0) (type default))
-    (uuid 9de7b63a-561b-4bc0-9e91-c10d708d7960)
+    (uuid 9bbd17d6-5331-47ac-a11e-99de2b963e49)
   )
   (wire (pts (xy 87.63 34.29) (xy 87.63 36.83))
     (stroke (width 0) (type default))
     (uuid a0d1bf56-0bd7-4207-8d40-efbb8abd66e0)
+  )
+  (wire (pts (xy 54.61 50.8) (xy 54.61 53.34))
+    (stroke (width 0) (type default))
+    (uuid a690a9e0-9a94-45a7-893c-5f732c61a8dc)
   )
   (wire (pts (xy 50.8 140.97) (xy 57.15 140.97))
     (stroke (width 0) (type default))
@@ -1268,14 +1330,6 @@
   (wire (pts (xy 105.41 26.67) (xy 105.41 29.21))
     (stroke (width 0) (type default))
     (uuid aa7678ea-b59b-4ec9-9070-a9f238c4608b)
-  )
-  (wire (pts (xy 144.78 92.71) (xy 147.32 92.71))
-    (stroke (width 0) (type default))
-    (uuid aab0f8b9-eca3-423d-b8bd-5a0a9e038bcc)
-  )
-  (wire (pts (xy 144.78 105.41) (xy 147.32 105.41))
-    (stroke (width 0) (type default))
-    (uuid ac3fbd1f-b091-40d0-94d7-44e0f65ac0a2)
   )
   (bus (pts (xy 48.26 95.25) (xy 48.26 97.79))
     (stroke (width 0) (type default))
@@ -1290,17 +1344,9 @@
     (stroke (width 0) (type default))
     (uuid b2fb8112-d742-4bdb-9c4b-4546c28cdb49)
   )
-  (wire (pts (xy 147.32 107.95) (xy 144.78 107.95))
+  (wire (pts (xy 57.15 60.96) (xy 54.61 60.96))
     (stroke (width 0) (type default))
-    (uuid b6c1f67a-c97a-4541-a573-9e5e0a15e56d)
-  )
-  (wire (pts (xy 144.78 107.95) (xy 144.78 110.49))
-    (stroke (width 0) (type default))
-    (uuid b8051950-c47d-4dcd-846a-d397d6f48bf9)
-  )
-  (wire (pts (xy 144.78 100.33) (xy 147.32 100.33))
-    (stroke (width 0) (type default))
-    (uuid bfe92a15-c718-4672-bf06-a80f4d7e4488)
+    (uuid b32ecda5-7274-41cb-965e-80f73c751734)
   )
   (wire (pts (xy 66.04 93.98) (xy 66.04 105.41))
     (stroke (width 0) (type default))
@@ -1314,14 +1360,23 @@
     (stroke (width 0) (type default))
     (uuid c87ef508-2faa-44a0-bbd7-17f5dec94e2c)
   )
+
+  (wire (pts (xy 54.61 53.34) (xy 57.15 53.34))
+    (stroke (width 0) (type default))
+    (uuid c9d05efe-e800-4ecf-9dc5-9a8db411e721)
+  )
   (bus (pts (xy 107.95 19.05) (xy 107.95 29.21))
     (stroke (width 0) (type default))
     (uuid cbe0571f-e29b-43b8-92f3-940cdc142b04)
   )
 
-  (wire (pts (xy 144.78 95.25) (xy 147.32 95.25))
+  (wire (pts (xy 170.18 114.3) (xy 170.18 116.84))
     (stroke (width 0) (type default))
-    (uuid d53d0f1f-e1fd-466a-8c7b-97589fae5ada)
+    (uuid cd5ef6f6-5540-4458-8ed4-a4550d8eb9ea)
+  )
+  (wire (pts (xy 200.66 116.84) (xy 198.12 116.84))
+    (stroke (width 0) (type default))
+    (uuid cf1dd4a0-2b49-4e36-a89c-a6881fe27bda)
   )
   (wire (pts (xy 78.74 110.49) (xy 78.74 113.03))
     (stroke (width 0) (type default))
@@ -1335,7 +1390,7 @@
     (stroke (width 0) (type default))
     (uuid eadd9098-54f0-4227-8505-f289f5fd3458)
   )
-  (wire (pts (xy 195.58 116.84) (xy 198.12 116.84))
+  (wire (pts (xy 193.04 116.84) (xy 198.12 116.84))
     (stroke (width 0) (type default))
     (uuid f1ca9373-18a3-4e69-a939-6a19e1e635b7)
   )
@@ -1351,11 +1406,19 @@
     (stroke (width 0) (type default))
     (uuid fa193931-f373-4316-a82b-4536ba654ab1)
   )
+  (wire (pts (xy 198.12 114.3) (xy 198.12 116.84))
+    (stroke (width 0) (type default))
+    (uuid fc41a972-c680-4553-95d9-39c3ca71fe22)
+  )
   (bus (pts (xy 48.26 95.25) (xy 45.72 95.25))
     (stroke (width 0) (type default))
     (uuid fdb4061d-8d28-4a3c-bd91-a3d41a22a328)
   )
 
+  (label "SCL" (at 54.61 55.88 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid 09190fa4-ae2b-40b3-9e64-afcce9d33467)
+  )
   (label "~INT" (at 54.61 140.97 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 0f0646cf-b35e-49b0-905c-bc530ba37d38)
@@ -1363,10 +1426,6 @@
   (label "SDA_{R}" (at 113.03 142.24 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 14d9f502-1975-424d-bfb2-6eb6910777ce)
-  )
-  (label "SCL_{R}" (at 162.56 130.81 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 151e71bd-3aac-4d64-b625-f6c579e150eb)
   )
   (label "SCL_{X}" (at 142.24 73.66 270) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
@@ -1380,24 +1439,16 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 2e9725d0-b038-4429-8009-c0a74f0bdc7c)
   )
-  (label "SDA_{R}" (at 144.78 105.41 180) (fields_autoplaced)
+  (label "SDA" (at 54.61 58.42 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 4066cdb8-553f-4de3-bf11-01be823f677f)
+    (uuid 34bbbc8d-dc78-4d06-a5fa-4d4bb9466cb2)
   )
-  (label "SDA_{T}" (at 195.58 114.3 90) (fields_autoplaced)
+  (label "SDA_{T}" (at 170.18 114.3 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 4876b2eb-a886-4d89-bf72-85ca374725d8)
   )
-  (label "INT" (at 144.78 95.25 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 4bdac12e-ccbc-43c7-8e20-7638a87023b7)
-  )
-  (label "SCL_{T}" (at 144.78 100.33 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 4d0f38d3-f56d-491a-b408-bdd65f543229)
-  )
-  (label "SCL_{X}" (at 139.7 130.81 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
+  (label "SCL_{X}" (at 200.66 114.3 90) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 53f24b75-1f60-4ab2-912a-595df96c988a)
   )
   (label "SDA_{X}" (at 129.54 73.66 270) (fields_autoplaced)
@@ -1412,15 +1463,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 6233d8de-a3ca-41ed-82ef-5602ae439ec2)
   )
-  (label "SDA_{T}" (at 144.78 102.87 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 6c9ed3b0-02e1-4204-99cc-776cea50e0ea)
-  )
   (label "SDA_{R}" (at 114.3 100.33 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 71479212-dd62-49f7-a588-694510d30b14)
   )
-  (label "SCL_{T}" (at 142.24 128.27 90) (fields_autoplaced)
+  (label "SCL_{T}" (at 198.12 114.3 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 7bfac5ee-8e78-4158-a896-96fbd13cb866)
   )
@@ -1448,10 +1495,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 94484841-5a87-41a7-ac72-ca330be8ce92)
   )
-  (label "SDA_{R}" (at 175.26 116.84 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid a9d3bfb2-8e82-4007-9f03-0c01b895009a)
-  )
   (label "SDA_{X}" (at 185.42 97.79 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid b31418e5-153f-411f-b443-e015aa770a26)
@@ -1468,10 +1511,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c6648b43-dd7c-4165-9959-ebd7a8520373)
   )
-  (label "SCL_{R}" (at 144.78 97.79 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid d147498f-3254-4f30-ab74-abcc72d89ec2)
-  )
   (label "INT_{X}" (at 153.67 73.66 270) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid d7893519-ebc9-439c-873a-d44e43b2e9ad)
@@ -1480,7 +1519,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid f287fd25-4afb-44ab-b7e2-e4465b3b0f14)
   )
-  (label "SDA_{X}" (at 198.12 116.84 0) (fields_autoplaced)
+  (label "SDA_{X}" (at 167.64 114.3 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid f4dc4cd5-faf5-4520-a8b2-cd512b3d47d8)
   )
@@ -1515,7 +1554,7 @@
     )
     (pin "1" (uuid e363ef56-bf7d-4ea3-9264-6e39acfdce59))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR039") (unit 1)
         )
@@ -1540,7 +1579,7 @@
     )
     (pin "1" (uuid bc65a793-8c65-4ed3-ab07-e91e01e50526))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR03") (unit 1)
         )
@@ -1554,7 +1593,7 @@
   )
 
   (symbol (lib_id "Device:R") (at 142.24 69.85 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid 1240d56a-996a-4b1b-b20f-b115c599b3d6)
     (property "Reference" "R6" (at 144.018 69.0153 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -1568,10 +1607,16 @@
     (property "Datasheet" "~" (at 142.24 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C114567" (at 142.24 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "15" (at 142.24 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 87bf6eac-32e9-4405-8959-99f1300f6bd1))
     (pin "2" (uuid 1365ed80-42d8-4c43-bd29-3b03128e95ff))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "R6") (unit 1)
         )
@@ -1601,7 +1646,7 @@
     )
     (pin "1" (uuid 2aa92bd2-5fdb-46e3-a15b-4a235c662cd8))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR01") (unit 1)
         )
@@ -1615,7 +1660,7 @@
   )
 
   (symbol (lib_id "Device:R") (at 153.67 69.85 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid 197098ac-f3c2-438f-b0f7-6db7fe5eee5c)
     (property "Reference" "R7" (at 155.448 69.0153 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -1629,10 +1674,16 @@
     (property "Datasheet" "~" (at 153.67 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C114567" (at 153.67 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "15" (at 153.67 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 6058121b-fefa-41d0-a297-61f6ada86560))
     (pin "2" (uuid 75cd0036-dd69-4565-a6ef-9528a0e17943))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "R7") (unit 1)
         )
@@ -1662,7 +1713,7 @@
     )
     (pin "1" (uuid 7351830e-52b6-4325-8663-19d3d31ee4b6))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR060") (unit 1)
         )
@@ -1676,13 +1727,19 @@
     (property "Reference" "R43" (at 59.69 88.9 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "4k7" (at 59.69 91.44 0)
+    (property "Value" "4.7k" (at 59.69 91.44 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 55.372 90.17 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 57.15 90.17 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC Part #" "C99782" (at 57.15 90.17 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "10" (at 57.15 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid c9705663-ffb3-4068-9cbd-ece67b7d1111))
@@ -1693,7 +1750,7 @@
           (reference "R43") (unit 1)
         )
       )
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "R10") (unit 1)
         )
@@ -1721,6 +1778,12 @@
     (property "Datasheet" "http://www.nxp.com/documents/data_sheet/P82B96.pdf" (at 96.52 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C2687855" (at 96.52 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "5" (at 96.52 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid a114f037-a5e5-475f-8113-24ace7b1c6be))
     (pin "2" (uuid 7d8cdf0c-8922-464c-bc46-e4a5fcac5929))
     (pin "3" (uuid 30da46e8-2f44-435a-bb97-5fa931aaff10))
@@ -1730,7 +1793,7 @@
     (pin "7" (uuid d81e739d-61bf-43a2-9a30-faabff75b1b8))
     (pin "8" (uuid a0e5b36f-6c48-4011-b071-6c592bf252ed))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "U6") (unit 1)
         )
@@ -1749,7 +1812,7 @@
     (property "Reference" "C9" (at 108.331 76.6353 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "100n" (at 108.331 79.1722 0)
+    (property "Value" "100n 50V" (at 108.331 79.1722 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 106.3752 81.28 0)
@@ -1758,10 +1821,16 @@
     (property "Datasheet" "~" (at 105.41 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C14663" (at 105.41 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "30" (at 105.41 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 4ccccec9-8424-4fb6-9c02-639311a2f3b5))
     (pin "2" (uuid d588cc48-a21d-43a7-a5bf-25e04b01df45))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "C9") (unit 1)
         )
@@ -1780,7 +1849,7 @@
     (property "Reference" "C10" (at 181.991 69.0153 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "22u" (at 181.991 71.5522 0)
+    (property "Value" "22u 10V" (at 181.991 71.5522 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 180.0352 73.66 0)
@@ -1789,10 +1858,16 @@
     (property "Datasheet" "~" (at 179.07 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C29277" (at 179.07 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "50" (at 179.07 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid a4a8d028-ecfc-461e-9d77-443ac2b00312))
     (pin "2" (uuid cfdde851-9f04-415e-a94a-ae12fba94a22))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "C10") (unit 1)
         )
@@ -1800,36 +1875,6 @@
       (project "control_panel"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/8ca9797e-e63e-4e59-a184-ef2a887eb814"
           (reference "C78") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5VD") (at 144.78 90.17 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3f41c0b9-72f7-47ea-8085-0313a2fd1a98)
-    (property "Reference" "#PWR05" (at 144.78 93.98 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5VD" (at 144.78 86.614 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 144.78 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 144.78 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 11fe5462-49d0-43ab-9457-6d2a8d9f8ed8))
-    (instances
-      (project "multi_led_driver"
-        (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
-          (reference "#PWR05") (unit 1)
-        )
-      )
-      (project "control_panel"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/8ca9797e-e63e-4e59-a184-ef2a887eb814"
-          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -1852,7 +1897,7 @@
     )
     (pin "1" (uuid 7d10f3f3-f029-4e95-a0e9-0e4f1ed06c55))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR040") (unit 1)
         )
@@ -1877,7 +1922,7 @@
     )
     (pin "1" (uuid 40f5e67f-059a-4827-a71a-be9af425779e))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR016") (unit 1)
         )
@@ -1907,7 +1952,7 @@
     )
     (pin "1" (uuid 79f11619-5dd1-4418-9443-75ed19e75436))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR011") (unit 1)
         )
@@ -1926,7 +1971,7 @@
     (property "Reference" "L3" (at 224.79 111.76 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "FerriteBead" (at 224.79 113.03 90)
+    (property "Value" "MMZ2012R102AT000" (at 224.79 113.03 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (at 224.79 118.618 90)
@@ -1935,10 +1980,16 @@
     (property "Datasheet" "~" (at 224.79 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C76810" (at 224.79 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "5" (at 224.79 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 5a0c32de-64ba-4c52-9aae-be494c5c1a0a))
     (pin "2" (uuid 96e090ab-f672-4cd6-a558-7dfe513132ed))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "L3") (unit 1)
         )
@@ -1952,7 +2003,7 @@
   )
 
   (symbol (lib_id "Connector:Screw_Terminal_01x04") (at 193.04 97.79 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 46538a83-b558-44f0-8b58-fc3576020cb5)
     (property "Reference" "J10" (at 193.04 86.36 0)
       (effects (font (size 1.27 1.27)))
@@ -1966,12 +2017,18 @@
     (property "Datasheet" "~" (at 193.04 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "" (at 193.04 97.79 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "" (at 193.04 97.79 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid f1b457d4-fc5d-4b73-9115-b322b7fe2d64))
     (pin "2" (uuid ada06b14-eb78-4873-80d0-3290b472d779))
     (pin "3" (uuid 59066431-d7bb-49ec-8803-a79233d77a1b))
     (pin "4" (uuid e0c9024d-a782-4cfe-b9c4-7bf7d202bd10))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "J10") (unit 1)
         )
@@ -2001,7 +2058,7 @@
     )
     (pin "1" (uuid 68aacd8f-517f-43cc-bb39-5777b7a906a1))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR04") (unit 1)
         )
@@ -2015,7 +2072,7 @@
   )
 
   (symbol (lib_id "Device:R") (at 129.54 69.85 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid 4d7ac886-68a2-4a37-a13c-da92da4effa2)
     (property "Reference" "R5" (at 131.318 69.0153 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -2029,10 +2086,16 @@
     (property "Datasheet" "~" (at 129.54 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C114567" (at 129.54 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "15" (at 129.54 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 5374d651-83aa-4254-9eb2-568c3249e008))
     (pin "2" (uuid b576c3e4-bd75-4acb-a7bc-360b7f0c61bc))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "R5") (unit 1)
         )
@@ -2062,7 +2125,7 @@
     )
     (pin "1" (uuid 66c182f2-d367-4014-939c-3de169165b99))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR012") (unit 1)
         )
@@ -2092,7 +2155,7 @@
     )
     (pin "1" (uuid 6c34531b-571c-4899-b496-08d5b25a48ee))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR08") (unit 1)
         )
@@ -2117,7 +2180,7 @@
     )
     (pin "1" (uuid 808f8268-1a63-4074-9deb-c61dad6f97c9))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR031") (unit 1)
         )
@@ -2147,7 +2210,7 @@
     )
     (pin "1" (uuid b5b0fd5d-0336-4464-bdd7-1afc1ae01298))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR02") (unit 1)
         )
@@ -2177,7 +2240,7 @@
     )
     (pin "1" (uuid a6537a34-2d06-42de-8d32-bf6ef99db902))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR037") (unit 1)
         )
@@ -2196,7 +2259,7 @@
     (property "Reference" "D5" (at 242.57 110.49 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "D" (at 242.57 113.03 0)
+    (property "Value" "SM05" (at 242.57 113.03 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering" (at 242.57 125.73 0)
@@ -2205,11 +2268,17 @@
     (property "Datasheet" "https://www.littelfuse.com/~/media/electronics/datasheets/tvs_diode_arrays/littelfuse_tvs_diode_array_sm712_datasheet.pdf.pdf" (at 238.76 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C460613" (at 242.57 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "100" (at 242.57 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid da2edc9f-1f73-4951-a29c-e1f8a28cec8c))
     (pin "2" (uuid 1f842a83-5fc6-43b6-82d5-56d551ead3fb))
     (pin "3" (uuid 1216d60e-73bf-408b-983c-261dda90373f))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "D5") (unit 1)
         )
@@ -2222,81 +2291,25 @@
     )
   )
 
-  (symbol (lib_id "Diode:SM712_SOT23") (at 153.67 130.81 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 6c51a2a0-9da1-41c4-be97-f7a03efc8616)
-    (property "Reference" "D3" (at 153.67 125.73 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "D" (at 153.67 128.27 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering" (at 153.67 139.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.littelfuse.com/~/media/electronics/datasheets/tvs_diode_arrays/littelfuse_tvs_diode_array_sm712_datasheet.pdf.pdf" (at 157.48 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 45669cec-2d03-4578-ba29-4464e1e21102))
-    (pin "2" (uuid 300c6aa7-bf79-47fc-b0db-f2fc5e628603))
-    (pin "3" (uuid 1448b9e8-c9a9-44c1-96f6-17ebc3964e0b))
-    (instances
-      (project "multi_led_driver"
-        (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
-          (reference "D3") (unit 1)
-        )
-      )
-      (project "control_panel"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/8ca9797e-e63e-4e59-a184-ef2a887eb814"
-          (reference "D6") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 153.67 134.62 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 7afc3bf0-c79b-4657-8c2c-046fe0892eb7)
-    (property "Reference" "#PWR07" (at 153.67 140.97 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "~" (at 153.67 139.0634 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 153.67 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 153.67 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 04e7b550-8deb-4ead-ba07-3440f1a3fbbe))
-    (instances
-      (project "multi_led_driver"
-        (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
-          (reference "#PWR07") (unit 1)
-        )
-      )
-      (project "control_panel"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/8ca9797e-e63e-4e59-a184-ef2a887eb814"
-          (reference "#PWR07") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:Q_Dual_NMOS_S1G1D2S2G2D1") (at 64.77 140.97 0) (unit 2)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 82873aa1-4184-4080-87a4-9c921116419a)
     (property "Reference" "Q1" (at 71.12 139.7 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Q_Dual_NMOS_S1G1D2S2G2D1" (at 71.12 142.24 0)
+    (property "Value" "DMN2004DWK" (at 71.12 142.24 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 69.85 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 69.85 140.97 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC Part #" "C156343" (at 64.77 140.97 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "5" (at 64.77 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid bf540e5f-4957-4340-9380-43da548b6e60))
@@ -2306,7 +2319,7 @@
     (pin "4" (uuid 6b1b3608-30ad-4070-ba8a-eedd66b029b4))
     (pin "5" (uuid f4435a66-b7e4-491a-bf99-69524d4bef4b))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "Q1") (unit 2)
         )
@@ -2339,7 +2352,7 @@
     )
     (pin "1" (uuid aa6784ed-d1ae-482e-bb1d-41bf070d403f))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR014") (unit 1)
         )
@@ -2369,7 +2382,7 @@
     )
     (pin "1" (uuid 345f569d-9239-46eb-b49d-38402919c1d1))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR018") (unit 1)
         )
@@ -2382,13 +2395,68 @@
     )
   )
 
+  (symbol (lib_id "power:GND") (at 54.61 63.5 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 9f685466-a184-43a7-a00d-596c02cba825)
+    (property "Reference" "#PWR063" (at 54.61 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 54.61 67.9434 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 54.61 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 54.61 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid b4086969-822b-461d-988a-ccaba486b47f))
+    (instances
+      (project "corridor_distribution"
+        (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
+          (reference "#PWR063") (unit 1)
+        )
+      )
+      (project "control_panel"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/8ca9797e-e63e-4e59-a184-ef2a887eb814"
+          (reference "#PWR0112") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+5V") (at 54.61 50.8 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid a1218627-2a63-4f16-b8d6-60ad66d7280c)
+    (property "Reference" "#PWR064" (at 54.61 54.61 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5V" (at 54.61 45.72 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 54.61 50.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 54.61 50.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6d9f9a68-6041-4164-8912-7df0c296e534))
+    (instances
+      (project "corridor_distribution"
+        (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
+          (reference "#PWR064") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:C") (at 165.1 69.85 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a392ae10-150b-4a90-95da-9088b3a1ffb4)
     (property "Reference" "C11" (at 168.021 69.0153 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "22u" (at 168.021 71.5522 0)
+    (property "Value" "22u 10V" (at 168.021 71.5522 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 166.0652 73.66 0)
@@ -2397,10 +2465,16 @@
     (property "Datasheet" "~" (at 165.1 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C29277" (at 165.1 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "50" (at 165.1 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 072a6506-c8c0-469e-a495-27cf5e0d3343))
     (pin "2" (uuid 1bc9ca92-ef14-4652-8326-4c795afccac6))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "C11") (unit 1)
         )
@@ -2430,7 +2504,7 @@
     )
     (pin "1" (uuid 6ac71ce0-3b92-42b2-8e7a-941d87bd9728))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR025") (unit 1)
         )
@@ -2449,7 +2523,7 @@
     (property "Reference" "D4" (at 184.15 111.76 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "D" (at 184.15 114.3 0)
+    (property "Value" "SM05" (at 184.15 114.3 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering" (at 184.15 125.73 0)
@@ -2458,11 +2532,17 @@
     (property "Datasheet" "https://www.littelfuse.com/~/media/electronics/datasheets/tvs_diode_arrays/littelfuse_tvs_diode_array_sm712_datasheet.pdf.pdf" (at 187.96 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C460613" (at 184.15 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "100" (at 184.15 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 648c5251-8a99-43de-ba78-8fcda44c5c4e))
     (pin "2" (uuid 8af4ab1c-64b7-4afe-8426-bd4d0cd4ab24))
     (pin "3" (uuid abf7dec9-87a8-45d4-a72b-7ad4b72174d6))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "D4") (unit 1)
         )
@@ -2492,7 +2572,7 @@
     )
     (pin "1" (uuid 6035182a-6732-4597-bf62-c282ef6a2814))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR059") (unit 1)
         )
@@ -2522,7 +2602,7 @@
     )
     (pin "1" (uuid acaace41-2c22-4ba7-87dd-5e706a49e97b))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR020") (unit 1)
         )
@@ -2552,7 +2632,7 @@
     )
     (pin "1" (uuid a54097cd-7cd6-44ff-8590-85ed2c52c9c8))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR022") (unit 1)
         )
@@ -2582,7 +2662,7 @@
     )
     (pin "1" (uuid daf71dc4-010a-4030-b5ee-82c899998392))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR028") (unit 1)
         )
@@ -2612,7 +2692,7 @@
     )
     (pin "1" (uuid 29f65d2e-3760-4376-a91a-9d3bb9fa0a50))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR017") (unit 1)
         )
@@ -2631,13 +2711,19 @@
     (property "Reference" "Q1" (at 81.28 132.08 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Q_Dual_NMOS_S1G1D2S2G2D1" (at 81.28 134.62 0)
+    (property "Value" "DMN2004DWK" (at 81.28 134.62 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (at 80.01 133.35 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 80.01 133.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC Part #" "C156343" (at 74.93 133.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "5" (at 74.93 133.35 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 5d253a2d-dc39-413a-b6c5-e2aa084fd337))
@@ -2647,7 +2733,7 @@
     (pin "4" (uuid ecf9155a-7be1-474e-9386-c2c8a436c467))
     (pin "5" (uuid 92e2da44-7504-40dc-94cc-f6a4e6382871))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "Q1") (unit 1)
         )
@@ -2678,6 +2764,12 @@
     (property "Datasheet" "~" (at 57.15 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C98220" (at 57.15 132.08 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "10" (at 57.15 132.08 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 8ea9be94-186e-4e12-9fff-055649b07a07))
     (pin "2" (uuid 5fd6ba9a-6472-48ba-811f-4d09e23cce1c))
     (instances
@@ -2686,7 +2778,7 @@
           (reference "R44") (unit 1)
         )
       )
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "R9") (unit 1)
         )
@@ -2697,36 +2789,6 @@
       (project "control_panel"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/8ca9797e-e63e-4e59-a184-ef2a887eb814"
           (reference "R26") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 144.78 110.49 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid d5958579-f757-4ba8-ba6b-0bd352d89c3d)
-    (property "Reference" "#PWR06" (at 144.78 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "~" (at 144.78 114.9334 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 144.78 110.49 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 144.78 110.49 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 45d746d4-903c-45ee-a747-10737732d16a))
-    (instances
-      (project "multi_led_driver"
-        (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
-          (reference "#PWR06") (unit 1)
-        )
-      )
-      (project "control_panel"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/8ca9797e-e63e-4e59-a184-ef2a887eb814"
-          (reference "#PWR01") (unit 1)
         )
       )
     )
@@ -2749,7 +2811,7 @@
     )
     (pin "1" (uuid a7266cb0-bc5b-482a-a2bc-fbee78e73403))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR032") (unit 1)
         )
@@ -2779,7 +2841,7 @@
     )
     (pin "1" (uuid 2647f72a-36a1-4b46-b76f-75100ff4b40d))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR013") (unit 1)
         )
@@ -2793,7 +2855,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_02x03_Odd_Even") (at 95.25 31.75 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ed00f75e-44ae-4232-9d79-b5b398fcf4e1)
     (property "Reference" "J12" (at 96.52 22.86 0)
       (effects (font (size 1.27 1.27)))
@@ -2807,6 +2869,12 @@
     (property "Datasheet" "~" (at 95.25 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "" (at 95.25 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "" (at 95.25 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 24652d4a-129d-44a9-80d3-c98ff2aa4a30))
     (pin "2" (uuid fbe37b40-0424-4501-959a-5ebb984a9d23))
     (pin "3" (uuid 74f79655-6df0-4fa3-bd3c-1055a8ad7ea7))
@@ -2814,7 +2882,7 @@
     (pin "5" (uuid 8d4431ea-e637-4987-993b-4acb779847cf))
     (pin "6" (uuid 91aa3a93-1704-41f8-b6c5-43a1e73b1290))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "J12") (unit 1)
         )
@@ -2839,7 +2907,7 @@
     )
     (pin "1" (uuid c778bcca-85f4-442f-860a-0babe7ca7921))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR021") (unit 1)
         )
@@ -2867,6 +2935,12 @@
     (property "Datasheet" "~" (at 67.31 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "C105579" (at 67.31 127 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "5" (at 67.31 127 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid b4e6ee24-73f8-41c5-b427-3fb4e3ae208a))
     (pin "2" (uuid eea54012-38c1-4a74-99bf-d2e93dd3f127))
     (instances
@@ -2875,7 +2949,7 @@
           (reference "R43") (unit 1)
         )
       )
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "R8") (unit 1)
         )
@@ -2894,7 +2968,7 @@
     (property "Reference" "JP3" (at 116.84 124.46 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "SolderJumper_2_Open" (at 116.84 127 0)
+    (property "Value" "SCL" (at 116.84 127 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" (at 116.84 130.81 0)
@@ -2903,10 +2977,16 @@
     (property "Datasheet" "~" (at 116.84 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "" (at 116.84 130.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "" (at 116.84 130.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid e0a6bec1-c3fb-42a1-b83b-adbc0d714c55))
     (pin "2" (uuid 4a9d1651-2c7c-406b-81f8-b8828e7769de))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "JP3") (unit 1)
         )
@@ -2917,6 +2997,40 @@
         )
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/8ca9797e-e63e-4e59-a184-ef2a887eb814"
           (reference "JP7") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector_Generic:Conn_01x04") (at 62.23 58.42 0) (mirror x) (unit 1)
+    (in_bom no) (on_board yes) (dnp no)
+    (uuid f7fad579-e5b2-4182-96c0-75cf8d72df2b)
+    (property "Reference" "J11" (at 64.77 58.42 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Conn_01x04" (at 64.77 55.88 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" (at 62.23 58.42 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 62.23 58.42 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC Part #" "" (at 62.23 58.42 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "" (at 62.23 58.42 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a9b417b1-b53b-4981-acc7-f6b2a245325d))
+    (pin "2" (uuid 0a85f5dc-1d5c-4b33-8dc9-75b3440dd0b1))
+    (pin "3" (uuid 19331824-ca7b-4e2b-a2ab-541bb0299089))
+    (pin "4" (uuid 83803453-c065-4cc2-b397-68b12805cf4b))
+    (instances
+      (project "corridor_distribution"
+        (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
+          (reference "J11") (unit 1)
         )
       )
     )
@@ -2939,7 +3053,7 @@
     )
     (pin "1" (uuid 6f0a685c-b918-4e3b-9f13-f4a0320557d3))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR010") (unit 1)
         )
@@ -2958,13 +3072,19 @@
     (property "Reference" "R43" (at 68.58 88.9 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "4k7" (at 68.58 91.44 0)
+    (property "Value" "4.7k" (at 68.58 91.44 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 64.262 90.17 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 66.04 90.17 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC Part #" "C99782" (at 66.04 90.17 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "10" (at 66.04 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 989d22fc-1e26-4ada-baa8-c937ebab2fe5))
@@ -2975,7 +3095,7 @@
           (reference "R43") (unit 1)
         )
       )
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "R11") (unit 1)
         )
@@ -2994,7 +3114,7 @@
     (property "Reference" "JP4" (at 116.84 135.89 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "SolderJumper_2_Open" (at 116.84 138.43 0)
+    (property "Value" "SDA" (at 116.84 138.43 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" (at 116.84 142.24 0)
@@ -3003,10 +3123,16 @@
     (property "Datasheet" "~" (at 116.84 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "" (at 116.84 142.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Total quantity" "" (at 116.84 142.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid df6ce7ba-a8ef-4f05-b031-b6b88fcda86a))
     (pin "2" (uuid 30723af5-8676-4eb4-bfb1-0bfe5e08dcb1))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "JP4") (unit 1)
         )
@@ -3039,7 +3165,7 @@
     )
     (pin "1" (uuid 8cf29afc-e48f-4369-ab5f-105f7b088f0c))
     (instances
-      (project "multi_led_driver"
+      (project "corridor_distribution"
         (path "/d4c2f312-ca5d-462b-a371-0fb5d5a0cf93/01427d6a-2fed-4662-9fee-1ada565cb5a0"
           (reference "#PWR038") (unit 1)
         )

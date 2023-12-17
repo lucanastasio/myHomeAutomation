@@ -134,6 +134,9 @@
     (property "Datasheet" "~" (at 215.9 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC Part #" "" (at 215.9 50.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (instances
       (project "night_light"
         (path "/c8bb3ba9-1daa-4665-ae97-22c9ddbf6eee"
@@ -156,6 +159,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 215.9 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC Part #" "" (at 215.9 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances

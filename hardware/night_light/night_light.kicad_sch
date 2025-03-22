@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "c8bb3ba9-1daa-4665-ae97-22c9ddbf6eee")
 	(paper "A4")
 	(lib_symbols
@@ -86,6 +86,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(wire
@@ -190,7 +191,6 @@
 	)
 	(label "PIR"
 		(at 162.56 43.18 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -201,7 +201,6 @@
 	)
 	(label "STAT"
 		(at 162.56 52.07 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -212,7 +211,6 @@
 	)
 	(label "EN"
 		(at 180.34 43.18 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -223,7 +221,6 @@
 	)
 	(label "ALS"
 		(at 162.56 45.72 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -234,7 +231,6 @@
 	)
 	(label "V_{SEN}"
 		(at 162.56 54.61 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -245,7 +241,6 @@
 	)
 	(label "ALS"
 		(at 180.34 97.79 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -256,7 +251,6 @@
 	)
 	(label "EN"
 		(at 124.46 69.85 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -267,7 +261,6 @@
 	)
 	(label "PIR"
 		(at 180.34 92.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -278,7 +271,6 @@
 	)
 	(label "STAT"
 		(at 142.24 99.06 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -289,7 +281,6 @@
 	)
 	(label "V_{SEN}"
 		(at 142.24 95.25 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -447,6 +438,10 @@
 	(sheet
 		(at 165.1 88.9)
 		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -476,23 +471,23 @@
 		)
 		(pin "PIR" output
 			(at 177.8 92.71 0)
+			(uuid "3e3d9fce-78a3-49fa-a2dd-2f0989059feb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "3e3d9fce-78a3-49fa-a2dd-2f0989059feb")
 		)
 		(pin "ALS" output
 			(at 177.8 97.79 0)
+			(uuid "e31fae09-b82d-483c-81e2-251e1ff2e7d6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "e31fae09-b82d-483c-81e2-251e1ff2e7d6")
 		)
 		(instances
 			(project "night_light"
@@ -505,6 +500,10 @@
 	(sheet
 		(at 88.9 88.9)
 		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -543,6 +542,10 @@
 	(sheet
 		(at 127 63.5)
 		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -572,13 +575,13 @@
 		)
 		(pin "EN" input
 			(at 127 69.85 180)
+			(uuid "2cff0bf2-ca64-4ea6-a5e4-aa8e2938c470")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2cff0bf2-ca64-4ea6-a5e4-aa8e2938c470")
 		)
 		(instances
 			(project "night_light"
@@ -591,6 +594,10 @@
 	(sheet
 		(at 165.1 38.1)
 		(size 12.7 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -620,53 +627,53 @@
 		)
 		(pin "EN" output
 			(at 177.8 43.18 0)
+			(uuid "d4a35059-2370-44cc-b400-f7bea869029a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d4a35059-2370-44cc-b400-f7bea869029a")
 		)
 		(pin "PIR" input
 			(at 165.1 43.18 180)
+			(uuid "07090a6d-0c9c-40b6-91da-f536a31b5948")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "07090a6d-0c9c-40b6-91da-f536a31b5948")
 		)
 		(pin "V_{SEN}" input
 			(at 165.1 54.61 180)
+			(uuid "adceb71a-4524-4c25-bd04-a231f814491e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "adceb71a-4524-4c25-bd04-a231f814491e")
 		)
 		(pin "STAT" input
 			(at 165.1 52.07 180)
+			(uuid "687a7329-0acd-4a4d-8181-af2eabd1f317")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "687a7329-0acd-4a4d-8181-af2eabd1f317")
 		)
 		(pin "ALS" input
 			(at 165.1 45.72 180)
+			(uuid "7dacdf80-2f4c-4a7b-84fc-d1d6054e750c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "7dacdf80-2f4c-4a7b-84fc-d1d6054e750c")
 		)
 		(instances
 			(project "night_light"
@@ -679,6 +686,10 @@
 	(sheet
 		(at 127 88.9)
 		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -708,23 +719,23 @@
 		)
 		(pin "V_{SEN}" output
 			(at 139.7 95.25 0)
+			(uuid "e97672c5-99e6-4bfe-a769-37b590ed4198")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "e97672c5-99e6-4bfe-a769-37b590ed4198")
 		)
 		(pin "STAT" output
 			(at 139.7 99.06 0)
+			(uuid "f0805b9e-14cf-4047-ac1f-c84fbf7c29d6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f0805b9e-14cf-4047-ac1f-c84fbf7c29d6")
 		)
 		(instances
 			(project "night_light"
@@ -737,6 +748,10 @@
 	(sheet
 		(at 88.9 63.5)
 		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -777,4 +792,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )

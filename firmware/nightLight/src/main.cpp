@@ -3,7 +3,7 @@
 #include "debug.h"
 #include "board.h"
 
-#define FADE_TIME_MS 10
+#define FADE_TIME_MS 16 // don't change: t_fade_mapping is calculated on this value, also 16 is equal to millis() resolution
 
 static const uint8_t bright_mapping[5] = {31, 63, 127, 191, 255};
 #if ADC_BITS == 8
@@ -15,7 +15,23 @@ static const uint16_t als_mapping[3] = {4, 16, 160}; // 0.01, 0.1, 1 lux
 #define VSEN_THRESH_SET 127
 #define VSEN_THRESH_CLR 191
 #endif
-static const uint8_t tout_mapping[4] = {0x3B, 0x76, 0xB0, 0xEB}; // 15.104, 30.208, 45.056, 60.160 seconds
+
+static inline millis_t tout_mapping_get()
+{
+    static const uint8_t tout_mapping[3] = {0x3B, 0x76, 0xEB};  // 15.104, 30.208, 60.160 seconds
+    static const uint8_t t_fade_mapping[5] = {2, 4, 8, 12, 16}; // 512, 1024, 2048, 3072, 4096 ms
+    // subtract the fade time from the timeout
+    return (((millis_t)(tout_mapping[settings.n_timeout] - t_fade_mapping[settings.n_bright])) << 8);
+}
+
+enum
+{
+    mode_emergency_only,
+    mode_night_only,
+    mode_dual,
+    mode_emergency_night,
+    mode_emergency_motion
+};
 
 void setup()
 {
@@ -46,30 +62,35 @@ void loop()
 
     if (menu_state == menu_state_off)
     {
+        uint16_t adc_val = ADC_VAL_GET();
         if (ADC_COMPLETE())
         {
             if (ADC_MUX_GET() == VSN_ADC)
             {
-                adc_vsn = ADC_VAL_GET();
+                adc_vsn = adc_val;
                 ADC_MUX_SET(ALS_ADC);
             }
             else
             {
-                adc_als = ADC_VAL_GET();
+                adc_als = adc_val;
                 ADC_MUX_SET(VSN_ADC);
             }
             ADC_START();
         }
 
+        bool power_out = (adc_vsn < VSEN_THRESH_SET);
+        bool power_in = (adc_vsn > VSEN_THRESH_CLR);
+        bool light_out = (adc_als < als_mapping[settings.n_thresh]);
+
         switch (light_state)
         {
         case light_state_idle:
-            if (adc_vsn < VSEN_THRESH_SET && settings.e_enable)
+            if (power_out && (settings.mode == mode_emergency_only || settings.mode == mode_dual /*|| (light_out && (settings.mode == mode_emergency_night))*/))
             {
                 light_state = light_state_emg;
                 SET_LED(bright_mapping[settings.e_bright]);
             }
-            else if (adc_als < als_mapping[settings.n_thresh] && PIR_DETECT() && settings.n_enable)
+            else if (light_out && PIR_DETECT() && (settings.mode == mode_night_only || settings.mode == mode_dual /*|| (power_out && (settings.mode == mode_emergency_motion))*/))
             {
                 light_state = light_state_fdi;
                 fade_cnt = 0;
@@ -77,7 +98,7 @@ void loop()
             }
             break;
         case light_state_emg:
-            if (adc_vsn > VSEN_THRESH_CLR)
+            if (power_in)
             {
                 SET_LED(0);
                 light_state = light_state_idle;
@@ -102,7 +123,7 @@ void loop()
             {
                 millis_prev = millis_now;
             }
-            else if (millis_now - millis_prev > (((millis_t)tout_mapping[settings.n_timeout]) << 8))
+            else if ((millis_now - millis_prev > tout_mapping_get()) /*|| (power_in && (settings.mode == mode_emergency_motion))*/)
             {
                 light_state = light_state_fdo;
                 millis_prev = millis_now;

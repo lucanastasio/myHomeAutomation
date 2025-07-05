@@ -8,13 +8,21 @@
 #include <Adafruit_XCA9554.h>
 #include <Adafruit_PWMServoDriver.h>
 #include <jled.h>
+#include <NTPClient.h>
+#include <WiFiUdp.h>
+#include <SolarCalculator.h>
 
 Preferences prefs;
 
 wl_status_t wifi_status_prev;
 
-#define FW_VERSION 0
+WiFiUDP ntpUDP;
+NTPClient timeClient(ntpUDP, "it.pool.ntp.org", 7200); // unneeded time interval, update managed directly
+#define TIME_UPDATE_HOUR 3							   // a what time the time should be updated
+
+#define FW_VERSION 0U
 #define FW_BUILD PIO_COMPILE_TIME
+#define CPU_CYCLES_MULT 4
 
 #define WIFI_CONN_TIMEOUT 60 // seconds
 #define HOSTNAME "corridorLightController"
@@ -25,15 +33,26 @@ wl_status_t wifi_status_prev;
 
 #define PWM_FREQ_PSC 3
 
-#define CLC_UPD_MS 10	// update interval in milliseconds, 10ms -> 100Hz
-#define CLC_DIST_NUM 3	// number of distribution boards
-#define CLC_CHAN_NUM 7	// number of actually used channels per distribution board
-#define CLC_TILE_NUM (CLC_DIST_NUM * CLC_CHAN_NUM)	// total number of tiles
-#define CLC_BTN_CHAN 7	// channel of the I/O expander used as the button input
+#define CLC_UPD_MS 10							   // update interval in milliseconds, 10ms -> 100Hz
+#define CLC_DIST_NUM 3							   // number of distribution boards
+#define CLC_CHAN_NUM 7							   // number of actually used channels per distribution board
+#define CLC_TILE_NUM (CLC_DIST_NUM * CLC_CHAN_NUM) // total number of tiles
+#define CLC_BTN_CHAN 7							   // channel of the I/O expander used as the button input
 // single press = on with auto brightness and timeout, long press = full on, second press = off (auto)
-// NOTE: the button is supposed to be debounced
+#define CLC_BTN_SHORT_PRESS_TICKS 2	 // number of CLC_UPD_MS ticks to consider a press as a short one (debouncing)
 #define CLC_BTN_LONG_PRESS_TICKS 100 // number of CLC_UPD_MS ticks to consider a press as a long one
+// for analog control:
+// pwm is scaled down and filtered, 100% gives 2.5V while the minimum is 0.3V corresponding to 12%, in 12 bits it's 491
+#define CLC_PWM_MIN 491
 
+#define CLC_DAWNDUSK_ALT CIVIL_DAWNDUSK_STD_ALTITUDE
+
+enum
+{
+	button_press_none,
+	button_press_short,
+	button_press_long
+};
 
 Adafruit_PWMServoDriver pwm[CLC_DIST_NUM] = {
 	Adafruit_PWMServoDriver(PCA9685_BASE_ADDR + 0),
@@ -144,14 +163,37 @@ const char *to_string(wl_status_t s)
 	}
 }
 
+#define HHMMSS_FMT "%02u:%02u:%02u"
+#define UTC2HHMMSS(x) uint8_t((x % 86400L) / 3600), uint8_t((x % 3600) / 60), uint8_t(x % 60)
+
+#define HHMM_FMT "%02u:%02u"
+#define UTC2HHMM(x) uint8_t((x / 60) % 24), uint8_t(x % 60)
+
+String utc2hhmmss(unsigned long utc)
+{
+	String str = "";
+	const int h = (utc % 86400L) / 3600;
+	const int m = (utc % 3600) / 60;
+	const int s = utc % 60;
+	str += (h / 10) % 10 + '0';
+	str += (h % 10) + '0';
+	str += ':';
+	str += (m / 10) % 10 + '0';
+	str += (m % 10) + '0';
+	str += ':';
+	str += (s / 10) % 10 + '0';
+	str += (s % 10) + '0';
+	return str;
+}
+
 void setup()
 {
 	Serial.begin(115200);
-	Serial.printf("Corridor Light Controller version %lu build %lu\n", FW_VERSION, FW_BUILD);
+	Serial.printf("Corridor Light Controller version %u build %lu\n", FW_VERSION, FW_BUILD);
 
 	prefs.begin("corridorController");
 	uint32_t counter = prefs.getULong("rebootCounter", 1); // default to 1
-	Serial.printf("Reboot count: %lu\n", counter);
+	Serial.printf("Reboot count: %u\n", counter);
 	counter++;
 	prefs.putULong("rebootCounter", counter);
 
@@ -160,14 +202,16 @@ void setup()
 	if (last_version != FW_VERSION)
 	{
 		// put upgrade checks here for future upgrades
-		Serial.printf("Upgraded firmware from %lu to %lu\n", last_version, FW_VERSION);
+		Serial.printf("Upgraded firmware from %u to %u\n", last_version, FW_VERSION);
 		prefs.putULong("lastFirmwareVersion", FW_VERSION);
 	}
 	if (last_build != FW_BUILD)
 	{
-		Serial.printf("Upgraded build from %lu to %lu\n", last_build, FW_BUILD);
+		Serial.printf("Upgraded build from %u to %lu\n", last_build, FW_BUILD);
 		prefs.putULong("lastFirmwareBuild", FW_BUILD);
 	}
+
+	// Rome: 41.898209742090536, 12.475697353988663
 
 	for (uint8_t i = 0; i < CLC_DIST_NUM; i++)
 	{
@@ -186,7 +230,7 @@ void setup()
 	}
 	Serial.println("");
 
-	if (!WiFi.config(IPAddress(WIFI_ADDR_IP), IPAddress(WIFI_ADDR_GW), IPAddress(WIFI_ADDR_SM)))
+	if (!WiFi.config(IPAddress(WIFI_ADDR_IP), IPAddress(WIFI_ADDR_GW), IPAddress(WIFI_ADDR_SM), IPAddress(1, 1, 1, 1), IPAddress(1, 0, 0, 1)))
 	{
 		// while (true)
 		//{
@@ -204,7 +248,6 @@ void setup()
 	{
 		Serial.print("Wifi connecting...");
 	}
-
 	ArduinoOTA.setHostname(HOSTNAME);
 	ArduinoOTA.begin();
 }
@@ -217,12 +260,17 @@ void loop()
 	{
 		if (wifi_status_prev != WL_CONNECTED && wifi_status_curr == WL_CONNECTED)
 		{
-			Serial.print("Wifi connected, IP address: ");
+			Serial.print(" connected, IP address: ");
 			Serial.println(WiFi.localIP());
+			if (!ArduinoOTA.getHostname().length())
+			{
+				// ArduinoOTA.setHostname(HOSTNAME);
+				// ArduinoOTA.begin();
+			}
 		}
 		else if (wifi_status_prev == WL_CONNECTED && wifi_status_curr != WL_CONNECTED)
 		{
-			Serial.printf("WiFi disconnected (current status: %s), reconnecting %s...\n", to_string(wifi_status_curr), WiFi.reconnect() ? "started" : "error");
+			Serial.printf("WiFi disconnected (current status: %s), reconnecting %s...", to_string(wifi_status_curr), WiFi.reconnect() ? "started" : "error");
 		}
 		else
 		{
@@ -230,24 +278,82 @@ void loop()
 		}
 		wifi_status_prev = wifi_status_curr;
 	}
+	else if (wifi_status_curr != WL_CONNECTED)
+	{
+		// Serial.print('.');
+	}
+
+	static unsigned long t_transit, t_sunrise, t_sunset, t_dawn, t_dusk;
+
+	static bool time_updated = false;
+	if (time_updated && timeClient.getHours() < TIME_UPDATE_HOUR)
+	{
+		Serial.println("Time update pending");
+		time_updated = false;
+	}
+	if ((!timeClient.isTimeSet() || (!time_updated && timeClient.getHours() >= TIME_UPDATE_HOUR)) && wifi_status_curr == WL_CONNECTED)
+	{
+		Serial.println("Updating time...");
+		if (timeClient.update())
+		{
+			time_updated = true;
+			unsigned long utc = timeClient.getEpochTime();
+			Serial.printf("Time updated: %lu (" HHMMSS_FMT ")\n", utc, UTC2HHMMSS(utc));
+			// perform sunrise/sunset calculations
+			JulianDay jd = JulianDay(utc);
+			double transit, sunrise, sunset, dawn, dusk;
+			const double sun_altitude = 0.0353 * sqrt(POS_ALT);
+			calcSunriseSunset(jd, POS_LAT, POS_LON, transit, sunrise, sunset, SUNRISESET_STD_ALTITUDE - sun_altitude);
+			calcSunriseSunset(jd, POS_LAT, POS_LON, transit, dawn, dusk, CLC_DAWNDUSK_ALT - sun_altitude);
+			const int t_conv = 60, t_ofs = 2;
+			t_transit = transit * t_conv + t_ofs;
+			t_sunrise = sunrise * t_conv + t_ofs;
+			t_sunset = sunset * t_conv + t_ofs;
+			t_dawn = dawn * t_conv + t_ofs;
+			t_dusk = dusk * t_conv + t_ofs;
+
+			Serial.printf(
+				"Sun times updated:\n"
+				"\tDawn:    " HHMM_FMT "\n"	 //%s\n"
+				"\tSunrise: " HHMM_FMT "\n"	 //%s\n"
+				"\tTransit: " HHMM_FMT "\n"	 //%s\n"
+				"\tSunset:  " HHMM_FMT "\n"	 //%s\n"
+				"\tDusk:    " HHMM_FMT "\n", //%s\n",
+				UTC2HHMM(t_dawn),
+				UTC2HHMM(t_sunrise),
+				UTC2HHMM(t_transit),
+				UTC2HHMM(t_sunset),
+				UTC2HHMM(t_dusk));
+		}
+		else
+		{
+			Serial.println("Timed out updating time");
+		}
+	}
 
 	ArduinoOTA.handle();
 	status_led.Update();
 	// core functionality
 
+	bool main_cycle_just_ran = false;
 	static uint32_t prev_millis = 0;
-	uint32_t curr_millis = millis();
+	uint32_t curr_millis = millis(), dt_main_loop;
 	if (curr_millis - CLC_UPD_MS > prev_millis)
 	{
+		dt_main_loop = micros();
+		main_cycle_just_ran = true;
+		prev_millis = curr_millis;
 		uint8_t adc_vals[CLC_TILE_NUM];
 		uint8_t io_state[CLC_DIST_NUM];
 		static uint8_t prev_io_state[CLC_DIST_NUM];
 		static bool first_io_read[CLC_DIST_NUM] = {true};
 		// read all inputs
 		// time: 24*2*8*2.5us = ~1ms
+		// NOTE: at 10ms update that's already 10% of the time
 		for (uint8_t i = 0; i < CLC_DIST_NUM; i++)
 		{
-			io_state[i] = ioe[i].input_port_reg->read(); // NOTE: this would be a private method, but it's needed to avoid 8 reads instead of one
+			// io_state[i] = ioe[i].input_port_reg->read(); // NOTE: this would be a private method, but it's needed to avoid 8 reads instead of one
+			io_state[i] = 0xFF;
 			if (first_io_read[i])
 			{
 				first_io_read[i] = false;
@@ -255,14 +361,36 @@ void loop()
 			}
 			for (uint8_t j = 0; j < CLC_CHAN_NUM; j++)
 			{
-				adc_vals[i * j] = adc[i].readADCsingle(j, INTERNAL_REF_OFF_ADC_ON);
+				// adc_vals[i * j] = adc[i].readADCsingle(j, INTERNAL_REF_OFF_ADC_ON);
+				adc_vals[i * j] = 0x00;
 			}
 		}
 
 		// button logic
+		static uint8_t press_count[CLC_DIST_NUM] = {0};
+		// static bool button_held[CLC_DIST_NUM] = {false};
+		uint8_t button_press[CLC_DIST_NUM] = {button_press_none};
 		for (uint8_t i = 0; i < CLC_DIST_NUM; i++)
 		{
-			
+			bool button_pressed = !(io_state[i] & (1 << CLC_BTN_CHAN));
+			if (button_pressed)
+			{
+				press_count[i]++;
+				if (press_count[i] == CLC_BTN_LONG_PRESS_TICKS) // equality comparison to trigger only once
+				{
+					button_press[i] = button_press_long;
+					Serial.printf("Button %u long press\n", i);
+				}
+			}
+			else
+			{
+				if (press_count[i] >= CLC_BTN_SHORT_PRESS_TICKS && press_count[i] < CLC_BTN_LONG_PRESS_TICKS)
+				{
+					button_press[i] = button_press_short;
+					Serial.printf("Button %u short press\n", i);
+				}
+				press_count[i] = 0;
+			}
 		}
 
 		// use some memory in favor of update speed since writing all via i2c could take some time
@@ -273,18 +401,12 @@ void loop()
 			for (uint8_t j = 0; j < CLC_CHAN_NUM; j++)
 			{
 				uint8_t tile_index = i * j;
-				// default value
+				// start value
 				curr_led_cold[tile_index] = prev_led_cold[tile_index];
 				curr_led_warm[tile_index] = prev_led_warm[tile_index];
-				
-				
-
-
 			}
 		}
-		
 
-		
 		// set all LEDs
 		// worst case time: 21 * 5 * 8 * 2.5us = 2.1ms
 		for (uint8_t i = 0; i < CLC_DIST_NUM; i++)
@@ -294,15 +416,32 @@ void loop()
 				uint8_t tile_index = i * j;
 				if (curr_led_cold[tile_index] != prev_led_cold[tile_index])
 				{
-					pwm[i].setPin(j * 2, curr_led_cold[tile_index]); // even = cold
+					// pwm[i].setPin(j * 2, curr_led_cold[tile_index]); // even = cold
 					prev_led_cold[tile_index] = curr_led_cold[tile_index];
 				}
 				if (curr_led_warm[tile_index] != prev_led_warm[tile_index])
 				{
-					pwm[i].setPin(1 + j * 2, curr_led_warm[tile_index]); // odd = warm
+					// pwm[i].setPin(1 + j * 2, curr_led_warm[tile_index]); // odd = warm
 					prev_led_warm[tile_index] = curr_led_warm[tile_index];
 				}
 			}
 		}
+		dt_main_loop = micros() - dt_main_loop;
+	}
+
+	// slower code to execute in "spare time"
+	if (main_cycle_just_ran)
+	{
+
+	}
+
+	static uint32_t cpu_cycles;
+	cpu_cycles++;
+	if (cpu_cycles >= F_CPU * CPU_CYCLES_MULT)
+	{
+		static uint32_t cpu_millis;
+		// TODO float load =
+		// Serial.printf("CPU load: %d%%\n", load);
+		cpu_millis = curr_millis;
 	}
 }

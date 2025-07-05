@@ -1,0 +1,7 @@
+23a24,25
+>   Adafruit_BusIO_Register *input_port_reg;
+> 
+26c28
+<   Adafruit_BusIO_Register *input_port_reg;
+---
+>   // Adafruit_BusIO_Register *input_port_reg;

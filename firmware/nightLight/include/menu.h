@@ -53,9 +53,6 @@ enum
     button_press_long
 };
 
-// Global variables
-millis_t last_press_time;
-
 static inline void settings_init(void)
 {
     for (uint8_t i = 0; i < sizeof(menu_settings_t); i++)
@@ -87,6 +84,7 @@ static inline void menu_update(millis_t millis_now)
 
     uint8_t button_press = button_press_none;
 
+    static millis_t last_press_time;
     static millis_t press_start = 0;
     static uint8_t button_held = 0;
     if (USRBTN_PRESSED())
@@ -106,7 +104,6 @@ static inline void menu_update(millis_t millis_now)
     {
         if (press_start && !button_held)
         {
-            press_start = 0;
             button_press = button_press_short;
         }
         press_start = 0;

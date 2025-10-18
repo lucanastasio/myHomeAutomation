@@ -1,10 +1,8 @@
-time_now = 1751490172 + 3600 * 2;
 
-jd = JulianDay(time_now);
-
-jd
-
-%printf("Hello wolrd\n");
+SUNRISESET_STD_ALTITUDE = -0.8333;
+CIVIL_DAWNDUSK_STD_ALTITUDE = -6.0;
+NAUTICAL_DAWNDUSK_STD_ALTITUDE = -12.0;
+ASTRONOMICAL_DAWNDUSK_STD_ALTITUDE = -18.0;
 
 function jd = JulianDay(utc)
     if nargin == 1
@@ -27,9 +25,8 @@ end
 
 function angle = wrapTo360(angle)
     angle = mod(angle, 360);
-    if angle < 0
-        angle = angle + 360;
-    end
+    indexes = (angle < 0);
+    angle(indexes) = angle(indexes) + 360;
 end
 
 function angle = wrapTo180(angle)
@@ -51,12 +48,12 @@ end
 
 function C = calcSunEqOfCenter(T)
     M = calcGeomMeanAnomalySun(T);
-    C = sin(radians(M)) * (1.914602 - 0.004817 * T) + sin(2 * radians(M)) * 0.019993;
+    C = sin(radians(M)) .* (1.914602 - 0.004817 * T) + sin(2 * radians(M)) * 0.019993;
 end
 
 function R = calcSunRadVector(T)
     M = calcGeomMeanAnomalySun(T);
-    R = 1.00014 - 0.01671 * cos(radians(M)) - 0.00014 * cos(2 * radians(M));  
+    R = 1.00014 - 0.01671 * cos(radians(M)) - 0.00014 * cos(2 * radians(M));
 end
 
 function eps = calcMeanObliquityOfEcliptic(T)
@@ -66,10 +63,10 @@ end
 function [ra, dec] = calcSolarCoordinates(T)
     L0 = calcGeomMeanLongSun(T);
     C = calcSunEqOfCenter(T);
-    L = L0 + C - 0.00569; 
+    L = L0 + C - 0.00569;
     eps = calcMeanObliquityOfEcliptic(T);
-    ra = degrees(atan2(cos(radians(eps)) * sin(radians(L)), cos(radians(L)))); 
-    dec = degrees(asin(sin(radians(eps)) * sin(radians(L))));
+    ra = degrees(atan2(cos(radians(eps)) .* sin(radians(L)), cos(radians(L))));
+    dec = degrees(asin(sin(radians(eps)) .* sin(radians(L))));
 end
 
 function GMST = calcGrMeanSiderealTime(jd)
@@ -78,25 +75,23 @@ function GMST = calcGrMeanSiderealTime(jd)
 end
 
 function [az, el] = equatorial2horizontal(H, dec, lat)
-    xhor = cos(radians(H)) * cos(radians(dec)) * sin(radians(lat)) - sin(radians(dec)) * cos(radians(lat));
-    yhor = sin(radians(H)) * cos(radians(dec));
-    zhor = cos(radians(H)) * cos(radians(dec)) * cos(radians(lat)) + sin(radians(dec)) * sin(radians(lat));
+    xhor = cos(radians(H)) .* cos(radians(dec)) .* sin(radians(lat)) - sin(radians(dec)) .* cos(radians(lat));
+    yhor = sin(radians(H)) .* cos(radians(dec));
+    zhor = cos(radians(H)) .* cos(radians(dec)) .* cos(radians(lat)) + sin(radians(dec)) .* sin(radians(lat));
 
     az = degrees(atan2(yhor, xhor));
-    el = degrees(atan2(zhor, sqrt(xhor^2 + yhor^2)));
+    el = degrees(atan2(zhor, sqrt(xhor.^2 + yhor.^2)));
 end
 
 function H = calcHourAngleRiseSet(dec, lat, h0)
-    H = degrees(acos((sin(radians(h0)) - sin(radians(lat)) * sin(radians(dec))) / ...
-        (cos(radians(lat)) * cos(radians(dec)))));
+    H = degrees(acos((sin(radians(h0)) - sin(radians(lat)) .* sin(radians(dec))) / ...
+        (cos(radians(lat)) .* cos(radians(dec)))));
 end
 
 function refraction = calcRefraction(el)
-    if el < -0.575
-        refraction = -20.774 / tan(radians(el)) / 3600;  
-    else
-        refraction = 1.02 / tan(radians(el + 10.3 / (el + 5.11))) / 60;  
-    end
+    refraction = -20.774 ./ tan(radians(el)) / 3600;
+    indexes = (el >= -0.575);
+    refraction(indexes) = 1.02 ./ tan(radians(el(indexes) + 10.3 ./ (el(indexes) + 5.11))) / 60;
 end
 
 function E = calcEquationOfTime(jd)
@@ -119,7 +114,7 @@ function [azimuth, elevation] = calcHorizontalCoordinates(jd, latitude, longitud
     [ra, dec] = calcSolarCoordinates(T);
     H = GMST + longitude - ra;
     [azimuth, elevation] = equatorial2horizontal(H, dec, latitude);
-    azimuth = azimuth + 180; 
+    azimuth = azimuth + 180;
     elevation = elevation + calcRefraction(elevation);
 end
 
@@ -153,4 +148,8 @@ function [transit, sunrise, sunset] = calcSunriseSunset(jd, latitude, longitude,
     sunset = m(3) * 24;
 end
 
-printf("Hello world\n");
+
+
+
+
+
